@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bas/esp32/esp-idf/components/jsmn/include/jsmn.h
+stddef.h
+-
+
+/home/bas/esp32/esp-idf/components/jsmn/src/jsmn.c
+jsmn.h
+/home/bas/esp32/esp-idf/components/jsmn/src/jsmn.h
+
