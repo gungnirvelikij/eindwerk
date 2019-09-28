@@ -1,0 +1,13 @@
+# Target labels
+ mconf-idf
+# Source files and their labels
+/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/CMakeFiles/mconf-idf
+/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/CMakeFiles/mconf-idf.rule
+/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/CMakeFiles/mconf-idf-complete.rule
+/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule
+/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule
+/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule
+/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule
+/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule
+/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule
+/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule
