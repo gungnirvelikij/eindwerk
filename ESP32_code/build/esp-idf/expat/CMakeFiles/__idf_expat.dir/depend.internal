@@ -4,11 +4,6 @@
 esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/loadlibrary.c.obj
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/loadlibrary.c
 esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlparse.c.obj
- ../../../../components/expat/port/include/expat_config.h
- ../../../../components/newlib/platform_include/assert.h
- ../../../../components/newlib/platform_include/errno.h
- ../../../../components/newlib/platform_include/sys/random.h
- ../../../../components/newlib/platform_include/sys/time.h
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/ascii.h
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/expat.h
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/expat_external.h
@@ -18,9 +13,13 @@ esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlparse.c.obj
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/xmlparse.c
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/xmlrole.h
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/xmltok.h
+ /home/gungnir/esp/esp-idf/components/expat/port/include/expat_config.h
+ /home/gungnir/esp/esp-idf/components/newlib/platform_include/assert.h
+ /home/gungnir/esp/esp-idf/components/newlib/platform_include/errno.h
+ /home/gungnir/esp/esp-idf/components/newlib/platform_include/sys/random.h
+ /home/gungnir/esp/esp-idf/components/newlib/platform_include/sys/time.h
  config/sdkconfig.h
 esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlrole.c.obj
- ../../../../components/expat/port/include/expat_config.h
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/ascii.h
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/expat_external.h
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/internal.h
@@ -28,8 +27,8 @@ esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlrole.c.obj
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/xmlrole.c
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/xmlrole.h
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/xmltok.h
+ /home/gungnir/esp/esp-idf/components/expat/port/include/expat_config.h
 esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok.c.obj
- ../../../../components/expat/port/include/expat_config.h
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/ascii.h
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/asciitab.h
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/expat_external.h
@@ -44,6 +43,7 @@ esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok.c.obj
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/xmltok_impl.c
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/xmltok_impl.h
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/xmltok_ns.c
+ /home/gungnir/esp/esp-idf/components/expat/port/include/expat_config.h
 esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_impl.c.obj
  /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/xmltok_impl.c
 esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_ns.c.obj

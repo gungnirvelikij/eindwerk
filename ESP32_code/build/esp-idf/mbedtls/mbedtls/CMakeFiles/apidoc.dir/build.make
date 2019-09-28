@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 # Utility rule file for apidoc.
 
@@ -67,10 +67,10 @@ esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/build: apidoc
 .PHONY : esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/build
 
 esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/mbedtls/mbedtls && $(CMAKE_COMMAND) -P CMakeFiles/apidoc.dir/cmake_clean.cmake
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/mbedtls/mbedtls && $(CMAKE_COMMAND) -P CMakeFiles/apidoc.dir/cmake_clean.cmake
 .PHONY : esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/clean
 
 esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/examples/get-started/hello_world /home/gungnir/esp/esp-idf/components/mbedtls/mbedtls /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/mbedtls/mbedtls /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code /home/gungnir/esp/esp-idf/components/mbedtls/mbedtls /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/mbedtls/mbedtls /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/depend
 

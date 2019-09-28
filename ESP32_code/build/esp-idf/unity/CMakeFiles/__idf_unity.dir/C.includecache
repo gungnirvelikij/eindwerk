@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-../../../../components/esp32/include/esp32/clk.h
+/home/gungnir/esp/esp-idf/components/esp32/include/esp32/clk.h
 stdint.h
 -
 
-../../../../components/esp32/include/esp_attr.h
+/home/gungnir/esp/esp-idf/components/esp32/include/esp_attr.h
 sdkconfig.h
-../../../../components/esp32/include/sdkconfig.h
+/home/gungnir/esp/esp-idf/components/esp32/include/sdkconfig.h
 
-../../../../components/esp_common/include/esp_assert.h
+/home/gungnir/esp/esp-idf/components/esp_common/include/esp_assert.h
 assert.h
-../../../../components/esp_common/include/assert.h
+/home/gungnir/esp/esp-idf/components/esp_common/include/assert.h
 
-../../../../components/esp_common/include/esp_bit_defs.h
+/home/gungnir/esp/esp-idf/components/esp_common/include/esp_bit_defs.h
 
-../../../../components/esp_common/include/esp_err.h
+/home/gungnir/esp/esp-idf/components/esp_common/include/esp_err.h
 stdint.h
 -
 stdio.h
@@ -28,25 +28,25 @@ stdio.h
 assert.h
 -
 
-../../../../components/esp_common/include/esp_idf_version.h
+/home/gungnir/esp/esp-idf/components/esp_common/include/esp_idf_version.h
 
-../../../../components/esp_common/include/esp_system.h
+/home/gungnir/esp/esp-idf/components/esp_common/include/esp_system.h
 stdint.h
 -
 stdbool.h
 -
 esp_err.h
-../../../../components/esp_common/include/esp_err.h
+/home/gungnir/esp/esp-idf/components/esp_common/include/esp_err.h
 esp_attr.h
-../../../../components/esp_common/include/esp_attr.h
+/home/gungnir/esp/esp-idf/components/esp_common/include/esp_attr.h
 esp_bit_defs.h
-../../../../components/esp_common/include/esp_bit_defs.h
+/home/gungnir/esp/esp-idf/components/esp_common/include/esp_bit_defs.h
 esp_idf_version.h
-../../../../components/esp_common/include/esp_idf_version.h
+/home/gungnir/esp/esp-idf/components/esp_common/include/esp_idf_version.h
 sdkconfig.h
-../../../../components/esp_common/include/sdkconfig.h
+/home/gungnir/esp/esp-idf/components/esp_common/include/sdkconfig.h
 
-../../../../components/esp_common/include/esp_types.h
+/home/gungnir/esp/esp-idf/components/esp_common/include/esp_types.h
 sys/cdefs.h
 -
 stdint.h
@@ -56,7 +56,7 @@ stdbool.h
 stddef.h
 -
 
-../../../../components/esp_rom/include/esp32/rom/ets_sys.h
+/home/gungnir/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h
 stdint.h
 -
 stdbool.h
@@ -64,31 +64,31 @@ stdbool.h
 stdlib.h
 -
 sdkconfig.h
-../../../../components/esp_rom/include/esp32/rom/sdkconfig.h
+/home/gungnir/esp/esp-idf/components/esp_rom/include/esp32/rom/sdkconfig.h
 soc/soc.h
-../../../../components/esp_rom/include/esp32/rom/soc/soc.h
+/home/gungnir/esp/esp-idf/components/esp_rom/include/esp32/rom/soc/soc.h
 
-../../../../components/esp_rom/include/esp32/rom/uart.h
+/home/gungnir/esp/esp-idf/components/esp_rom/include/esp32/rom/uart.h
 esp_types.h
-../../../../components/esp_rom/include/esp32/rom/esp_types.h
+/home/gungnir/esp/esp-idf/components/esp_rom/include/esp32/rom/esp_types.h
 esp_attr.h
-../../../../components/esp_rom/include/esp32/rom/esp_attr.h
+/home/gungnir/esp/esp-idf/components/esp_rom/include/esp32/rom/esp_attr.h
 ets_sys.h
-../../../../components/esp_rom/include/esp32/rom/ets_sys.h
+/home/gungnir/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h
 soc/soc.h
-../../../../components/esp_rom/include/esp32/rom/soc/soc.h
+/home/gungnir/esp/esp-idf/components/esp_rom/include/esp32/rom/soc/soc.h
 soc/uart_periph.h
-../../../../components/esp_rom/include/esp32/rom/soc/uart_periph.h
+/home/gungnir/esp/esp-idf/components/esp_rom/include/esp32/rom/soc/uart_periph.h
 
-../../../../components/newlib/platform_include/assert.h
+/home/gungnir/esp/esp-idf/components/newlib/platform_include/assert.h
 sdkconfig.h
 -
 stdlib.h
 -
 
-../../../../components/newlib/platform_include/time.h
+/home/gungnir/esp/esp-idf/components/newlib/platform_include/time.h
 
-../../../../components/soc/esp32/include/soc/cpu.h
+/home/gungnir/esp/esp-idf/components/soc/esp32/include/soc/cpu.h
 stdint.h
 -
 stdbool.h
@@ -96,119 +96,55 @@ stdbool.h
 stddef.h
 -
 xtensa/corebits.h
-../../../../components/soc/esp32/include/soc/xtensa/corebits.h
+/home/gungnir/esp/esp-idf/components/soc/esp32/include/soc/xtensa/corebits.h
 xtensa/config/core.h
-../../../../components/soc/esp32/include/soc/xtensa/config/core.h
+/home/gungnir/esp/esp-idf/components/soc/esp32/include/soc/xtensa/config/core.h
 
-../../../../components/soc/esp32/include/soc/soc.h
+/home/gungnir/esp/esp-idf/components/soc/esp32/include/soc/soc.h
 stdint.h
 -
 esp_assert.h
-../../../../components/soc/esp32/include/soc/esp_assert.h
+/home/gungnir/esp/esp-idf/components/soc/esp32/include/soc/esp_assert.h
 esp_bit_defs.h
 -
 
-../../../../components/soc/esp32/include/soc/uart_caps.h
+/home/gungnir/esp/esp-idf/components/soc/esp32/include/soc/uart_caps.h
 
-../../../../components/soc/esp32/include/soc/uart_channel.h
+/home/gungnir/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h
 
-../../../../components/soc/esp32/include/soc/uart_reg.h
+/home/gungnir/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h
 soc.h
-../../../../components/soc/esp32/include/soc/soc.h
+/home/gungnir/esp/esp-idf/components/soc/esp32/include/soc/soc.h
 
-../../../../components/soc/esp32/include/soc/uart_struct.h
+/home/gungnir/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h
 stdint.h
 -
 
-../../../../components/soc/include/soc/uart_periph.h
+/home/gungnir/esp/esp-idf/components/soc/include/soc/uart_periph.h
 soc/uart_caps.h
-../../../../components/soc/include/soc/soc/uart_caps.h
+/home/gungnir/esp/esp-idf/components/soc/include/soc/soc/uart_caps.h
 soc/uart_reg.h
-../../../../components/soc/include/soc/soc/uart_reg.h
+/home/gungnir/esp/esp-idf/components/soc/include/soc/soc/uart_reg.h
 soc/uart_struct.h
-../../../../components/soc/include/soc/soc/uart_struct.h
+/home/gungnir/esp/esp-idf/components/soc/include/soc/soc/uart_struct.h
 soc/uart_channel.h
-../../../../components/soc/include/soc/soc/uart_channel.h
+/home/gungnir/esp/esp-idf/components/soc/include/soc/soc/uart_channel.h
 
-../../../../components/unity/include/unity_config.h
+/home/gungnir/esp/esp-idf/components/unity/include/unity_config.h
 esp_err.h
 -
 stddef.h
 -
 sdkconfig.h
-../../../../components/unity/include/sdkconfig.h
+/home/gungnir/esp/esp-idf/components/unity/include/sdkconfig.h
 unity_test_runner.h
-../../../../components/unity/include/unity_test_runner.h
+/home/gungnir/esp/esp-idf/components/unity/include/unity_test_runner.h
 
-../../../../components/unity/include/unity_test_runner.h
+/home/gungnir/esp/esp-idf/components/unity/include/unity_test_runner.h
 stdint.h
 -
 stdbool.h
 -
-
-../../../../components/unity/unity/src/unity.h
-unity_internals.h
-../../../../components/unity/unity/src/unity_internals.h
-
-../../../../components/unity/unity/src/unity_internals.h
-unity_config.h
-../../../../components/unity/unity/src/unity_config.h
-setjmp.h
--
-math.h
--
-stddef.h
--
-stdint.h
--
-limits.h
--
-time.h
--
-stdio.h
--
-stdio.h
--
-
-../../../../components/xtensa/esp32/include/xtensa/config/core-isa.h
-
-../../../../components/xtensa/esp32/include/xtensa/config/core-matmap.h
-
-../../../../components/xtensa/esp32/include/xtensa/config/core.h
-xtensa/hal.h
--
-xtensa/xtensa-versions.h
--
-xtensa/hal.h
-../../../../components/xtensa/esp32/include/xtensa/config/xtensa/hal.h
-xtensa/xtensa-versions.h
-../../../../components/xtensa/esp32/include/xtensa/config/xtensa/xtensa-versions.h
-xtensa/config/core-isa.h
--
-xtensa/config/core-matmap.h
--
-xtensa/config/tie.h
--
-core-isa.h
-../../../../components/xtensa/esp32/include/xtensa/config/core-isa.h
-core-matmap.h
-../../../../components/xtensa/esp32/include/xtensa/config/core-matmap.h
-tie.h
-../../../../components/xtensa/esp32/include/xtensa/config/tie.h
-xtensa/config/tie-asm.h
--
-tie-asm.h
-../../../../components/xtensa/esp32/include/xtensa/config/tie-asm.h
-
-../../../../components/xtensa/esp32/include/xtensa/config/tie-asm.h
-
-../../../../components/xtensa/esp32/include/xtensa/config/tie.h
-
-../../../../components/xtensa/include/xtensa/corebits.h
-
-../../../../components/xtensa/include/xtensa/hal.h
-
-../../../../components/xtensa/include/xtensa/xtensa-versions.h
 
 /home/gungnir/esp/esp-idf/components/unity/unity/src/unity.c
 unity.h
@@ -269,6 +205,46 @@ unity.h
 /home/gungnir/esp/esp-idf/components/unity/unity.h
 esp_system.h
 /home/gungnir/esp/esp-idf/components/unity/esp_system.h
+
+/home/gungnir/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h
+
+/home/gungnir/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h
+
+/home/gungnir/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h
+xtensa/hal.h
+-
+xtensa/xtensa-versions.h
+-
+xtensa/hal.h
+/home/gungnir/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/xtensa/hal.h
+xtensa/xtensa-versions.h
+/home/gungnir/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/xtensa/xtensa-versions.h
+xtensa/config/core-isa.h
+-
+xtensa/config/core-matmap.h
+-
+xtensa/config/tie.h
+-
+core-isa.h
+/home/gungnir/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h
+core-matmap.h
+/home/gungnir/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h
+tie.h
+/home/gungnir/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h
+xtensa/config/tie-asm.h
+-
+tie-asm.h
+/home/gungnir/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie-asm.h
+
+/home/gungnir/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie-asm.h
+
+/home/gungnir/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h
+
+/home/gungnir/esp/esp-idf/components/xtensa/include/xtensa/corebits.h
+
+/home/gungnir/esp/esp-idf/components/xtensa/include/xtensa/hal.h
+
+/home/gungnir/esp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h
 
 config/sdkconfig.h
 

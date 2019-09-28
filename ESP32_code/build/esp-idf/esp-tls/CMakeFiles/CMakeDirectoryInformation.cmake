@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/gungnir/esp/esp-idf")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 # Include any dependencies generated for this target.
 include esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/depend.make
@@ -58,134 +58,134 @@ include esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/progress.make
 include esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/flags.make
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/flags.make
-esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj: ../../../../components/fatfs/diskio/diskio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio.c
+esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj: /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio.c
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio.c > CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio.c > CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.i
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio.c -o CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio.c -o CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.s
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/flags.make
-esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj: ../../../../components/fatfs/diskio/diskio_rawflash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_rawflash.c
+esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj: /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_rawflash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_rawflash.c
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_rawflash.c > CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_rawflash.c > CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.i
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_rawflash.c -o CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_rawflash.c -o CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.s
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/flags.make
-esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj: ../../../../components/fatfs/diskio/diskio_sdmmc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_sdmmc.c
+esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj: /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_sdmmc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_sdmmc.c
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_sdmmc.c > CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_sdmmc.c > CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.i
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_sdmmc.c -o CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_sdmmc.c -o CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.s
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/flags.make
-esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj: ../../../../components/fatfs/diskio/diskio_wl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_wl.c
+esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj: /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_wl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_wl.c
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_wl.c > CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_wl.c > CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.i
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_wl.c -o CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/diskio/diskio_wl.c -o CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.s
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.obj: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/flags.make
-esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.obj: ../../../../components/fatfs/src/ff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/src/ff.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/src/ff.c
+esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.obj: /home/gungnir/esp/esp-idf/components/fatfs/src/ff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/src/ff.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/src/ff.c
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_fatfs.dir/src/ff.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/src/ff.c > CMakeFiles/__idf_fatfs.dir/src/ff.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/src/ff.c > CMakeFiles/__idf_fatfs.dir/src/ff.c.i
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_fatfs.dir/src/ff.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/src/ff.c -o CMakeFiles/__idf_fatfs.dir/src/ff.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/src/ff.c -o CMakeFiles/__idf_fatfs.dir/src/ff.c.s
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/flags.make
-esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj: ../../../../components/fatfs/port/freertos/ffsystem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c
+esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj: /home/gungnir/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c > CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c > CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.i
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c -o CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c -o CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.s
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/flags.make
-esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj: ../../../../components/fatfs/src/ffunicode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/src/ffunicode.c
+esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj: /home/gungnir/esp/esp-idf/components/fatfs/src/ffunicode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/src/ffunicode.c
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/src/ffunicode.c > CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/src/ffunicode.c > CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.i
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/src/ffunicode.c -o CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/src/ffunicode.c -o CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.s
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/flags.make
-esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj: ../../../../components/fatfs/vfs/vfs_fat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat.c
+esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj: /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat.c
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat.c > CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat.c > CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.i
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat.c -o CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat.c -o CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.s
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/flags.make
-esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj: ../../../../components/fatfs/vfs/vfs_fat_sdmmc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c
+esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj: /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c > CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c > CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.i
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c -o CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c -o CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.s
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/flags.make
-esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj: ../../../../components/fatfs/vfs/vfs_fat_spiflash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_spiflash.c
+esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj: /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_spiflash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj   -c /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_spiflash.c
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_spiflash.c > CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_spiflash.c > CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.i
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_spiflash.c -o CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/fatfs/vfs/vfs_fat_spiflash.c -o CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.s
 
 # Object files for target __idf_fatfs
 __idf_fatfs_OBJECTS = \
@@ -215,9 +215,9 @@ esp-idf/fatfs/libfatfs.a: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_s
 esp-idf/fatfs/libfatfs.a: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj
 esp-idf/fatfs/libfatfs.a: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/build.make
 esp-idf/fatfs/libfatfs.a: esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libfatfs.a"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && $(CMAKE_COMMAND) -P CMakeFiles/__idf_fatfs.dir/cmake_clean_target.cmake
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_fatfs.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libfatfs.a"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && $(CMAKE_COMMAND) -P CMakeFiles/__idf_fatfs.dir/cmake_clean_target.cmake
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_fatfs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/build: esp-idf/fatfs/libfatfs.a
@@ -225,10 +225,10 @@ esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/build: esp-idf/fatfs/libfatfs.a
 .PHONY : esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/build
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs && $(CMAKE_COMMAND) -P CMakeFiles/__idf_fatfs.dir/cmake_clean.cmake
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs && $(CMAKE_COMMAND) -P CMakeFiles/__idf_fatfs.dir/cmake_clean.cmake
 .PHONY : esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/clean
 
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/examples/get-started/hello_world /home/gungnir/esp/esp-idf/components/fatfs /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code /home/gungnir/esp/esp-idf/components/fatfs /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/depend
 

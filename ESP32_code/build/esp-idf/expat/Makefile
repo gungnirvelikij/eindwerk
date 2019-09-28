@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/expat/CMakeFiles/progress.marks
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles 0
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/expat/CMakeFiles/progress.marks
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/clean
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/preinstall
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/preinstall
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/expat/CMakeFiles/__idf_expat.dir/rule:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/CMakeFiles/__idf_expat.dir/rule
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/expat/CMakeFiles/__idf_expat.dir/rule
 .PHONY : esp-idf/expat/CMakeFiles/__idf_expat.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_expat: esp-idf/expat/CMakeFiles/__idf_expat.dir/rule
 
 # fast build rule for target.
 __idf_expat/fast:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/build
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/build
 .PHONY : __idf_expat/fast
 
 expat/expat/lib/loadlibrary.obj: expat/expat/lib/loadlibrary.c.obj
@@ -177,7 +177,7 @@ expat/expat/lib/loadlibrary.obj: expat/expat/lib/loadlibrary.c.obj
 
 # target to build an object file
 expat/expat/lib/loadlibrary.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/loadlibrary.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/loadlibrary.c.obj
 .PHONY : expat/expat/lib/loadlibrary.c.obj
 
 expat/expat/lib/loadlibrary.i: expat/expat/lib/loadlibrary.c.i
@@ -186,7 +186,7 @@ expat/expat/lib/loadlibrary.i: expat/expat/lib/loadlibrary.c.i
 
 # target to preprocess a source file
 expat/expat/lib/loadlibrary.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/loadlibrary.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/loadlibrary.c.i
 .PHONY : expat/expat/lib/loadlibrary.c.i
 
 expat/expat/lib/loadlibrary.s: expat/expat/lib/loadlibrary.c.s
@@ -195,7 +195,7 @@ expat/expat/lib/loadlibrary.s: expat/expat/lib/loadlibrary.c.s
 
 # target to generate assembly for a file
 expat/expat/lib/loadlibrary.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/loadlibrary.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/loadlibrary.c.s
 .PHONY : expat/expat/lib/loadlibrary.c.s
 
 expat/expat/lib/xmlparse.obj: expat/expat/lib/xmlparse.c.obj
@@ -204,7 +204,7 @@ expat/expat/lib/xmlparse.obj: expat/expat/lib/xmlparse.c.obj
 
 # target to build an object file
 expat/expat/lib/xmlparse.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlparse.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlparse.c.obj
 .PHONY : expat/expat/lib/xmlparse.c.obj
 
 expat/expat/lib/xmlparse.i: expat/expat/lib/xmlparse.c.i
@@ -213,7 +213,7 @@ expat/expat/lib/xmlparse.i: expat/expat/lib/xmlparse.c.i
 
 # target to preprocess a source file
 expat/expat/lib/xmlparse.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlparse.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlparse.c.i
 .PHONY : expat/expat/lib/xmlparse.c.i
 
 expat/expat/lib/xmlparse.s: expat/expat/lib/xmlparse.c.s
@@ -222,7 +222,7 @@ expat/expat/lib/xmlparse.s: expat/expat/lib/xmlparse.c.s
 
 # target to generate assembly for a file
 expat/expat/lib/xmlparse.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlparse.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlparse.c.s
 .PHONY : expat/expat/lib/xmlparse.c.s
 
 expat/expat/lib/xmlrole.obj: expat/expat/lib/xmlrole.c.obj
@@ -231,7 +231,7 @@ expat/expat/lib/xmlrole.obj: expat/expat/lib/xmlrole.c.obj
 
 # target to build an object file
 expat/expat/lib/xmlrole.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlrole.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlrole.c.obj
 .PHONY : expat/expat/lib/xmlrole.c.obj
 
 expat/expat/lib/xmlrole.i: expat/expat/lib/xmlrole.c.i
@@ -240,7 +240,7 @@ expat/expat/lib/xmlrole.i: expat/expat/lib/xmlrole.c.i
 
 # target to preprocess a source file
 expat/expat/lib/xmlrole.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlrole.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlrole.c.i
 .PHONY : expat/expat/lib/xmlrole.c.i
 
 expat/expat/lib/xmlrole.s: expat/expat/lib/xmlrole.c.s
@@ -249,7 +249,7 @@ expat/expat/lib/xmlrole.s: expat/expat/lib/xmlrole.c.s
 
 # target to generate assembly for a file
 expat/expat/lib/xmlrole.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlrole.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmlrole.c.s
 .PHONY : expat/expat/lib/xmlrole.c.s
 
 expat/expat/lib/xmltok.obj: expat/expat/lib/xmltok.c.obj
@@ -258,7 +258,7 @@ expat/expat/lib/xmltok.obj: expat/expat/lib/xmltok.c.obj
 
 # target to build an object file
 expat/expat/lib/xmltok.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok.c.obj
 .PHONY : expat/expat/lib/xmltok.c.obj
 
 expat/expat/lib/xmltok.i: expat/expat/lib/xmltok.c.i
@@ -267,7 +267,7 @@ expat/expat/lib/xmltok.i: expat/expat/lib/xmltok.c.i
 
 # target to preprocess a source file
 expat/expat/lib/xmltok.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok.c.i
 .PHONY : expat/expat/lib/xmltok.c.i
 
 expat/expat/lib/xmltok.s: expat/expat/lib/xmltok.c.s
@@ -276,7 +276,7 @@ expat/expat/lib/xmltok.s: expat/expat/lib/xmltok.c.s
 
 # target to generate assembly for a file
 expat/expat/lib/xmltok.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok.c.s
 .PHONY : expat/expat/lib/xmltok.c.s
 
 expat/expat/lib/xmltok_impl.obj: expat/expat/lib/xmltok_impl.c.obj
@@ -285,7 +285,7 @@ expat/expat/lib/xmltok_impl.obj: expat/expat/lib/xmltok_impl.c.obj
 
 # target to build an object file
 expat/expat/lib/xmltok_impl.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_impl.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_impl.c.obj
 .PHONY : expat/expat/lib/xmltok_impl.c.obj
 
 expat/expat/lib/xmltok_impl.i: expat/expat/lib/xmltok_impl.c.i
@@ -294,7 +294,7 @@ expat/expat/lib/xmltok_impl.i: expat/expat/lib/xmltok_impl.c.i
 
 # target to preprocess a source file
 expat/expat/lib/xmltok_impl.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_impl.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_impl.c.i
 .PHONY : expat/expat/lib/xmltok_impl.c.i
 
 expat/expat/lib/xmltok_impl.s: expat/expat/lib/xmltok_impl.c.s
@@ -303,7 +303,7 @@ expat/expat/lib/xmltok_impl.s: expat/expat/lib/xmltok_impl.c.s
 
 # target to generate assembly for a file
 expat/expat/lib/xmltok_impl.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_impl.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_impl.c.s
 .PHONY : expat/expat/lib/xmltok_impl.c.s
 
 expat/expat/lib/xmltok_ns.obj: expat/expat/lib/xmltok_ns.c.obj
@@ -312,7 +312,7 @@ expat/expat/lib/xmltok_ns.obj: expat/expat/lib/xmltok_ns.c.obj
 
 # target to build an object file
 expat/expat/lib/xmltok_ns.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_ns.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_ns.c.obj
 .PHONY : expat/expat/lib/xmltok_ns.c.obj
 
 expat/expat/lib/xmltok_ns.i: expat/expat/lib/xmltok_ns.c.i
@@ -321,7 +321,7 @@ expat/expat/lib/xmltok_ns.i: expat/expat/lib/xmltok_ns.c.i
 
 # target to preprocess a source file
 expat/expat/lib/xmltok_ns.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_ns.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_ns.c.i
 .PHONY : expat/expat/lib/xmltok_ns.c.i
 
 expat/expat/lib/xmltok_ns.s: expat/expat/lib/xmltok_ns.c.s
@@ -330,7 +330,7 @@ expat/expat/lib/xmltok_ns.s: expat/expat/lib/xmltok_ns.c.s
 
 # target to generate assembly for a file
 expat/expat/lib/xmltok_ns.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_ns.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/expat/CMakeFiles/__idf_expat.dir/build.make esp-idf/expat/CMakeFiles/__idf_expat.dir/expat/expat/lib/xmltok_ns.c.s
 .PHONY : expat/expat/lib/xmltok_ns.c.s
 
 # Help Target
@@ -375,6 +375,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake")
-  include("/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake")
+  include("/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake")
+  include("/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake")
 
 endif()
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/protobuf-c/CMakeFiles/progress.marks
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/protobuf-c/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles 0
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/protobuf-c/CMakeFiles/progress.marks
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/protobuf-c/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/protobuf-c/clean
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/protobuf-c/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/protobuf-c/preinstall
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/protobuf-c/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/protobuf-c/preinstall
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/protobuf-c/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/rule:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/rule
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/rule
 .PHONY : esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_protobuf-c: esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/rule
 
 # fast build rule for target.
 __idf_protobuf-c/fast:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/build.make esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/build
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/build.make esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/build
 .PHONY : __idf_protobuf-c/fast
 
 protobuf-c/protobuf-c/protobuf-c.obj: protobuf-c/protobuf-c/protobuf-c.c.obj
@@ -177,7 +177,7 @@ protobuf-c/protobuf-c/protobuf-c.obj: protobuf-c/protobuf-c/protobuf-c.c.obj
 
 # target to build an object file
 protobuf-c/protobuf-c/protobuf-c.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/build.make esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c/protobuf-c/protobuf-c.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/build.make esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c/protobuf-c/protobuf-c.c.obj
 .PHONY : protobuf-c/protobuf-c/protobuf-c.c.obj
 
 protobuf-c/protobuf-c/protobuf-c.i: protobuf-c/protobuf-c/protobuf-c.c.i
@@ -186,7 +186,7 @@ protobuf-c/protobuf-c/protobuf-c.i: protobuf-c/protobuf-c/protobuf-c.c.i
 
 # target to preprocess a source file
 protobuf-c/protobuf-c/protobuf-c.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/build.make esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c/protobuf-c/protobuf-c.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/build.make esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c/protobuf-c/protobuf-c.c.i
 .PHONY : protobuf-c/protobuf-c/protobuf-c.c.i
 
 protobuf-c/protobuf-c/protobuf-c.s: protobuf-c/protobuf-c/protobuf-c.c.s
@@ -195,7 +195,7 @@ protobuf-c/protobuf-c/protobuf-c.s: protobuf-c/protobuf-c/protobuf-c.c.s
 
 # target to generate assembly for a file
 protobuf-c/protobuf-c/protobuf-c.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/build.make esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c/protobuf-c/protobuf-c.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/build.make esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c/protobuf-c/protobuf-c.c.s
 .PHONY : protobuf-c/protobuf-c/protobuf-c.c.s
 
 # Help Target
@@ -225,6 +225,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 # Include any dependencies generated for this target.
 include esp-idf/driver/CMakeFiles/__idf_driver.dir/depend.make
@@ -58,290 +58,290 @@ include esp-idf/driver/CMakeFiles/__idf_driver.dir/progress.make
 include esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/can.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/can.c.obj: ../../../../components/driver/can.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/can.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/can.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/can.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/can.c.obj: /home/gungnir/esp/esp-idf/components/driver/can.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/can.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/can.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/can.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/can.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/can.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/can.c > CMakeFiles/__idf_driver.dir/can.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/can.c > CMakeFiles/__idf_driver.dir/can.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/can.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/can.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/can.c -o CMakeFiles/__idf_driver.dir/can.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/can.c -o CMakeFiles/__idf_driver.dir/can.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio.c.obj: ../../../../components/driver/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/gpio.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/gpio.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio.c.obj: /home/gungnir/esp/esp-idf/components/driver/gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/gpio.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/gpio.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/gpio.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/gpio.c > CMakeFiles/__idf_driver.dir/gpio.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/gpio.c > CMakeFiles/__idf_driver.dir/gpio.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/gpio.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/gpio.c -o CMakeFiles/__idf_driver.dir/gpio.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/gpio.c -o CMakeFiles/__idf_driver.dir/gpio.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c.c.obj: ../../../../components/driver/i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/i2c.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/i2c.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c.c.obj: /home/gungnir/esp/esp-idf/components/driver/i2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/i2c.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/i2c.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/i2c.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/i2c.c > CMakeFiles/__idf_driver.dir/i2c.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/i2c.c > CMakeFiles/__idf_driver.dir/i2c.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/i2c.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/i2c.c -o CMakeFiles/__idf_driver.dir/i2c.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/i2c.c -o CMakeFiles/__idf_driver.dir/i2c.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s.c.obj: ../../../../components/driver/i2s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/i2s.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/i2s.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s.c.obj: /home/gungnir/esp/esp-idf/components/driver/i2s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/i2s.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/i2s.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/i2s.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/i2s.c > CMakeFiles/__idf_driver.dir/i2s.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/i2s.c > CMakeFiles/__idf_driver.dir/i2s.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/i2s.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/i2s.c -o CMakeFiles/__idf_driver.dir/i2s.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/i2s.c -o CMakeFiles/__idf_driver.dir/i2s.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/ledc.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/ledc.c.obj: ../../../../components/driver/ledc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/ledc.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/ledc.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/ledc.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/ledc.c.obj: /home/gungnir/esp/esp-idf/components/driver/ledc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/ledc.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/ledc.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/ledc.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/ledc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/ledc.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/ledc.c > CMakeFiles/__idf_driver.dir/ledc.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/ledc.c > CMakeFiles/__idf_driver.dir/ledc.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/ledc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/ledc.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/ledc.c -o CMakeFiles/__idf_driver.dir/ledc.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/ledc.c -o CMakeFiles/__idf_driver.dir/ledc.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm.c.obj: ../../../../components/driver/mcpwm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/mcpwm.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/mcpwm.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm.c.obj: /home/gungnir/esp/esp-idf/components/driver/mcpwm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/mcpwm.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/mcpwm.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/mcpwm.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/mcpwm.c > CMakeFiles/__idf_driver.dir/mcpwm.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/mcpwm.c > CMakeFiles/__idf_driver.dir/mcpwm.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/mcpwm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/mcpwm.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/mcpwm.c -o CMakeFiles/__idf_driver.dir/mcpwm.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/mcpwm.c -o CMakeFiles/__idf_driver.dir/mcpwm.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/pcnt.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/pcnt.c.obj: ../../../../components/driver/pcnt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/pcnt.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/pcnt.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/pcnt.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/pcnt.c.obj: /home/gungnir/esp/esp-idf/components/driver/pcnt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/pcnt.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/pcnt.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/pcnt.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/pcnt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/pcnt.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/pcnt.c > CMakeFiles/__idf_driver.dir/pcnt.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/pcnt.c > CMakeFiles/__idf_driver.dir/pcnt.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/pcnt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/pcnt.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/pcnt.c -o CMakeFiles/__idf_driver.dir/pcnt.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/pcnt.c -o CMakeFiles/__idf_driver.dir/pcnt.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/periph_ctrl.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/periph_ctrl.c.obj: ../../../../components/driver/periph_ctrl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/periph_ctrl.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/periph_ctrl.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/periph_ctrl.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/periph_ctrl.c.obj: /home/gungnir/esp/esp-idf/components/driver/periph_ctrl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/periph_ctrl.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/periph_ctrl.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/periph_ctrl.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/periph_ctrl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/periph_ctrl.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/periph_ctrl.c > CMakeFiles/__idf_driver.dir/periph_ctrl.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/periph_ctrl.c > CMakeFiles/__idf_driver.dir/periph_ctrl.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/periph_ctrl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/periph_ctrl.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/periph_ctrl.c -o CMakeFiles/__idf_driver.dir/periph_ctrl.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/periph_ctrl.c -o CMakeFiles/__idf_driver.dir/periph_ctrl.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt.c.obj: ../../../../components/driver/rmt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/rmt.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/rmt.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt.c.obj: /home/gungnir/esp/esp-idf/components/driver/rmt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/rmt.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/rmt.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/rmt.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/rmt.c > CMakeFiles/__idf_driver.dir/rmt.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/rmt.c > CMakeFiles/__idf_driver.dir/rmt.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/rmt.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/rmt.c -o CMakeFiles/__idf_driver.dir/rmt.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/rmt.c -o CMakeFiles/__idf_driver.dir/rmt.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/rtc_module.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/rtc_module.c.obj: ../../../../components/driver/rtc_module.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/rtc_module.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/rtc_module.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/rtc_module.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/rtc_module.c.obj: /home/gungnir/esp/esp-idf/components/driver/rtc_module.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/rtc_module.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/rtc_module.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/rtc_module.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/rtc_module.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/rtc_module.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/rtc_module.c > CMakeFiles/__idf_driver.dir/rtc_module.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/rtc_module.c > CMakeFiles/__idf_driver.dir/rtc_module.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/rtc_module.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/rtc_module.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/rtc_module.c -o CMakeFiles/__idf_driver.dir/rtc_module.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/rtc_module.c -o CMakeFiles/__idf_driver.dir/rtc_module.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdio_slave.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/sdio_slave.c.obj: ../../../../components/driver/sdio_slave.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdio_slave.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sdio_slave.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sdio_slave.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/sdio_slave.c.obj: /home/gungnir/esp/esp-idf/components/driver/sdio_slave.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdio_slave.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sdio_slave.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sdio_slave.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdio_slave.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/sdio_slave.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sdio_slave.c > CMakeFiles/__idf_driver.dir/sdio_slave.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sdio_slave.c > CMakeFiles/__idf_driver.dir/sdio_slave.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdio_slave.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/sdio_slave.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sdio_slave.c -o CMakeFiles/__idf_driver.dir/sdio_slave.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sdio_slave.c -o CMakeFiles/__idf_driver.dir/sdio_slave.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_host.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_host.c.obj: ../../../../components/driver/sdmmc_host.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_host.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sdmmc_host.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sdmmc_host.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_host.c.obj: /home/gungnir/esp/esp-idf/components/driver/sdmmc_host.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_host.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sdmmc_host.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sdmmc_host.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_host.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/sdmmc_host.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sdmmc_host.c > CMakeFiles/__idf_driver.dir/sdmmc_host.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sdmmc_host.c > CMakeFiles/__idf_driver.dir/sdmmc_host.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_host.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/sdmmc_host.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sdmmc_host.c -o CMakeFiles/__idf_driver.dir/sdmmc_host.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sdmmc_host.c -o CMakeFiles/__idf_driver.dir/sdmmc_host.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.obj: ../../../../components/driver/sdmmc_transaction.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sdmmc_transaction.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.obj: /home/gungnir/esp/esp-idf/components/driver/sdmmc_transaction.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sdmmc_transaction.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sdmmc_transaction.c > CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sdmmc_transaction.c > CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sdmmc_transaction.c -o CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sdmmc_transaction.c -o CMakeFiles/__idf_driver.dir/sdmmc_transaction.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_crc.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_crc.c.obj: ../../../../components/driver/sdspi_crc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_crc.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sdspi_crc.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sdspi_crc.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_crc.c.obj: /home/gungnir/esp/esp-idf/components/driver/sdspi_crc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_crc.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sdspi_crc.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sdspi_crc.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_crc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/sdspi_crc.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sdspi_crc.c > CMakeFiles/__idf_driver.dir/sdspi_crc.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sdspi_crc.c > CMakeFiles/__idf_driver.dir/sdspi_crc.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_crc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/sdspi_crc.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sdspi_crc.c -o CMakeFiles/__idf_driver.dir/sdspi_crc.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sdspi_crc.c -o CMakeFiles/__idf_driver.dir/sdspi_crc.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_host.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_host.c.obj: ../../../../components/driver/sdspi_host.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_host.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sdspi_host.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sdspi_host.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_host.c.obj: /home/gungnir/esp/esp-idf/components/driver/sdspi_host.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_host.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sdspi_host.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sdspi_host.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_host.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/sdspi_host.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sdspi_host.c > CMakeFiles/__idf_driver.dir/sdspi_host.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sdspi_host.c > CMakeFiles/__idf_driver.dir/sdspi_host.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_host.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/sdspi_host.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sdspi_host.c -o CMakeFiles/__idf_driver.dir/sdspi_host.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sdspi_host.c -o CMakeFiles/__idf_driver.dir/sdspi_host.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_transaction.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_transaction.c.obj: ../../../../components/driver/sdspi_transaction.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_transaction.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sdspi_transaction.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sdspi_transaction.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_transaction.c.obj: /home/gungnir/esp/esp-idf/components/driver/sdspi_transaction.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_transaction.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sdspi_transaction.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sdspi_transaction.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_transaction.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/sdspi_transaction.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sdspi_transaction.c > CMakeFiles/__idf_driver.dir/sdspi_transaction.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sdspi_transaction.c > CMakeFiles/__idf_driver.dir/sdspi_transaction.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sdspi_transaction.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/sdspi_transaction.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sdspi_transaction.c -o CMakeFiles/__idf_driver.dir/sdspi_transaction.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sdspi_transaction.c -o CMakeFiles/__idf_driver.dir/sdspi_transaction.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sigmadelta.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/sigmadelta.c.obj: ../../../../components/driver/sigmadelta.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sigmadelta.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sigmadelta.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sigmadelta.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/sigmadelta.c.obj: /home/gungnir/esp/esp-idf/components/driver/sigmadelta.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sigmadelta.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/sigmadelta.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/sigmadelta.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sigmadelta.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/sigmadelta.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sigmadelta.c > CMakeFiles/__idf_driver.dir/sigmadelta.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/sigmadelta.c > CMakeFiles/__idf_driver.dir/sigmadelta.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/sigmadelta.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/sigmadelta.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sigmadelta.c -o CMakeFiles/__idf_driver.dir/sigmadelta.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/sigmadelta.c -o CMakeFiles/__idf_driver.dir/sigmadelta.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_common.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_common.c.obj: ../../../../components/driver/spi_common.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_common.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/spi_common.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/spi_common.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_common.c.obj: /home/gungnir/esp/esp-idf/components/driver/spi_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_common.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/spi_common.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/spi_common.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/spi_common.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/spi_common.c > CMakeFiles/__idf_driver.dir/spi_common.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/spi_common.c > CMakeFiles/__idf_driver.dir/spi_common.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/spi_common.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/spi_common.c -o CMakeFiles/__idf_driver.dir/spi_common.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/spi_common.c -o CMakeFiles/__idf_driver.dir/spi_common.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_master.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_master.c.obj: ../../../../components/driver/spi_master.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_master.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=gnu11 -o CMakeFiles/__idf_driver.dir/spi_master.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/spi_master.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_master.c.obj: /home/gungnir/esp/esp-idf/components/driver/spi_master.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_master.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=gnu11 -o CMakeFiles/__idf_driver.dir/spi_master.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/spi_master.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_master.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/spi_master.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=gnu11 -E /home/gungnir/esp/esp-idf/components/driver/spi_master.c > CMakeFiles/__idf_driver.dir/spi_master.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=gnu11 -E /home/gungnir/esp/esp-idf/components/driver/spi_master.c > CMakeFiles/__idf_driver.dir/spi_master.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_master.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/spi_master.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=gnu11 -S /home/gungnir/esp/esp-idf/components/driver/spi_master.c -o CMakeFiles/__idf_driver.dir/spi_master.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -std=gnu11 -S /home/gungnir/esp/esp-idf/components/driver/spi_master.c -o CMakeFiles/__idf_driver.dir/spi_master.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_slave.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_slave.c.obj: ../../../../components/driver/spi_slave.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_slave.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/spi_slave.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/spi_slave.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_slave.c.obj: /home/gungnir/esp/esp-idf/components/driver/spi_slave.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_slave.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/spi_slave.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/spi_slave.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_slave.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/spi_slave.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/spi_slave.c > CMakeFiles/__idf_driver.dir/spi_slave.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/spi_slave.c > CMakeFiles/__idf_driver.dir/spi_slave.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/spi_slave.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/spi_slave.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/spi_slave.c -o CMakeFiles/__idf_driver.dir/spi_slave.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/spi_slave.c -o CMakeFiles/__idf_driver.dir/spi_slave.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/timer.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/timer.c.obj: ../../../../components/driver/timer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/timer.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/timer.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/timer.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/timer.c.obj: /home/gungnir/esp/esp-idf/components/driver/timer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/timer.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/timer.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/timer.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/timer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/timer.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/timer.c > CMakeFiles/__idf_driver.dir/timer.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/timer.c > CMakeFiles/__idf_driver.dir/timer.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/timer.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/timer.c -o CMakeFiles/__idf_driver.dir/timer.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/timer.c -o CMakeFiles/__idf_driver.dir/timer.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/uart.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/uart.c.obj: ../../../../components/driver/uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/uart.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/uart.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/uart.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/uart.c.obj: /home/gungnir/esp/esp-idf/components/driver/uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/uart.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_driver.dir/uart.c.obj   -c /home/gungnir/esp/esp-idf/components/driver/uart.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/uart.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/uart.c > CMakeFiles/__idf_driver.dir/uart.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/driver/uart.c > CMakeFiles/__idf_driver.dir/uart.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/uart.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/uart.c -o CMakeFiles/__idf_driver.dir/uart.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/driver/uart.c -o CMakeFiles/__idf_driver.dir/uart.c.s
 
 # Object files for target __idf_driver
 __idf_driver_OBJECTS = \
@@ -395,9 +395,9 @@ esp-idf/driver/libdriver.a: esp-idf/driver/CMakeFiles/__idf_driver.dir/timer.c.o
 esp-idf/driver/libdriver.a: esp-idf/driver/CMakeFiles/__idf_driver.dir/uart.c.obj
 esp-idf/driver/libdriver.a: esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make
 esp-idf/driver/libdriver.a: esp-idf/driver/CMakeFiles/__idf_driver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library libdriver.a"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && $(CMAKE_COMMAND) -P CMakeFiles/__idf_driver.dir/cmake_clean_target.cmake
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_driver.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library libdriver.a"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && $(CMAKE_COMMAND) -P CMakeFiles/__idf_driver.dir/cmake_clean_target.cmake
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_driver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/driver/CMakeFiles/__idf_driver.dir/build: esp-idf/driver/libdriver.a
@@ -405,10 +405,10 @@ esp-idf/driver/CMakeFiles/__idf_driver.dir/build: esp-idf/driver/libdriver.a
 .PHONY : esp-idf/driver/CMakeFiles/__idf_driver.dir/build
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver && $(CMAKE_COMMAND) -P CMakeFiles/__idf_driver.dir/cmake_clean.cmake
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver && $(CMAKE_COMMAND) -P CMakeFiles/__idf_driver.dir/cmake_clean.cmake
 .PHONY : esp-idf/driver/CMakeFiles/__idf_driver.dir/clean
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/examples/get-started/hello_world /home/gungnir/esp/esp-idf/components/driver /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/driver/CMakeFiles/__idf_driver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code /home/gungnir/esp/esp-idf/components/driver /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/driver/CMakeFiles/__idf_driver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/driver/CMakeFiles/__idf_driver.dir/depend
 

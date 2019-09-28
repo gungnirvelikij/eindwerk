@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/CMakeFiles/progress.marks
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles 0
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/CMakeFiles/progress.marks
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/clean
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,17 +143,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/preinstall
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/preinstall
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -179,6 +179,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

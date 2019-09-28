@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader
 
 # Utility rule file for confserver.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/bu
 include CMakeFiles/confserver.dir/progress.make
 
 CMakeFiles/confserver:
-	/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/tools/kconfig_new/confserver.py --env-file /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/config.env --kconfig /home/gungnir/esp/esp-idf/Kconfig --sdkconfig-rename /home/gungnir/esp/esp-idf/sdkconfig.rename --config /home/gungnir/esp/esp-idf/examples/get-started/hello_world/sdkconfig
+	/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/tools/kconfig_new/confserver.py --env-file /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/config.env --kconfig /home/gungnir/esp/esp-idf/Kconfig --sdkconfig-rename /home/gungnir/esp/esp-idf/sdkconfig.rename --config /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/sdkconfig
 
 confserver: CMakeFiles/confserver
 confserver: CMakeFiles/confserver.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/confserver.dir/clean:
 .PHONY : CMakeFiles/confserver.dir/clean
 
 CMakeFiles/confserver.dir/depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/CMakeFiles/confserver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/components/bootloader/subproject /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/CMakeFiles/confserver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/confserver.dir/depend
 

@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader
 
 # Include any dependencies generated for this target.
 include esp-idf/log/CMakeFiles/__idf_log.dir/depend.make
@@ -58,17 +58,17 @@ include esp-idf/log/CMakeFiles/__idf_log.dir/progress.make
 include esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
 
 esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj: esp-idf/log/CMakeFiles/__idf_log.dir/flags.make
-esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj: ../../../../../components/log/log.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/log && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_log.dir/log.c.obj   -c /home/gungnir/esp/esp-idf/components/log/log.c
+esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj: /home/gungnir/esp/esp-idf/components/log/log.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/log && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_log.dir/log.c.obj   -c /home/gungnir/esp/esp-idf/components/log/log.c
 
 esp-idf/log/CMakeFiles/__idf_log.dir/log.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_log.dir/log.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/log && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/log/log.c > CMakeFiles/__idf_log.dir/log.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/log && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/log/log.c > CMakeFiles/__idf_log.dir/log.c.i
 
 esp-idf/log/CMakeFiles/__idf_log.dir/log.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_log.dir/log.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/log && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/log/log.c -o CMakeFiles/__idf_log.dir/log.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/log && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/log/log.c -o CMakeFiles/__idf_log.dir/log.c.s
 
 # Object files for target __idf_log
 __idf_log_OBJECTS = \
@@ -80,9 +80,9 @@ __idf_log_EXTERNAL_OBJECTS =
 esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj
 esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/build.make
 esp-idf/log/liblog.a: esp-idf/log/CMakeFiles/__idf_log.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library liblog.a"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/log && $(CMAKE_COMMAND) -P CMakeFiles/__idf_log.dir/cmake_clean_target.cmake
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/log && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_log.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library liblog.a"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/log && $(CMAKE_COMMAND) -P CMakeFiles/__idf_log.dir/cmake_clean_target.cmake
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/log && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_log.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/log/CMakeFiles/__idf_log.dir/build: esp-idf/log/liblog.a
@@ -90,10 +90,10 @@ esp-idf/log/CMakeFiles/__idf_log.dir/build: esp-idf/log/liblog.a
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/build
 
 esp-idf/log/CMakeFiles/__idf_log.dir/clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/log && $(CMAKE_COMMAND) -P CMakeFiles/__idf_log.dir/cmake_clean.cmake
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/log && $(CMAKE_COMMAND) -P CMakeFiles/__idf_log.dir/cmake_clean.cmake
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/clean
 
 esp-idf/log/CMakeFiles/__idf_log.dir/depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/components/log /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/log /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/log/CMakeFiles/__idf_log.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/components/log /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/log /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/log/CMakeFiles/__idf_log.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/depend
 

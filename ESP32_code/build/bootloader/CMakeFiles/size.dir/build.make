@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader
 
 # Utility rule file for size.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/bu
 include CMakeFiles/size.dir/progress.make
 
 CMakeFiles/size: bootloader.elf
-	/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/tools/idf_size.py /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/bootloader.map
+	/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/tools/idf_size.py /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/bootloader.map
 
 size: CMakeFiles/size
 size: CMakeFiles/size.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/size.dir/clean:
 .PHONY : CMakeFiles/size.dir/clean
 
 CMakeFiles/size.dir/depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/CMakeFiles/size.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/components/bootloader/subproject /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/CMakeFiles/size.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/size.dir/depend
 

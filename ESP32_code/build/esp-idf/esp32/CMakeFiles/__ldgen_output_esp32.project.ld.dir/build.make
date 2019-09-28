@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 # Utility rule file for __ldgen_output_esp32.project.ld.
 
@@ -56,23 +56,23 @@ include esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/progress.ma
 esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld: esp-idf/esp32/ld/esp32.project.ld
 
 
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/esp32/ld/esp32.project.ld.in
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/esp_ringbuf/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/spi_flash/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/esp_wifi/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/esp_eth/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/lwip/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/esp_event/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/espcoredump/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/esp32/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/esp32/ld/esp32_fragments.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/xtensa/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/soc/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/heap/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/freertos/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/newlib/newlib.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/app_trace/linker.lf
-esp-idf/esp32/ld/esp32.project.ld: ../../../../components/esp_gdbstub/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/esp32/ld/esp32.project.ld.in
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/esp_ringbuf/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/spi_flash/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/esp_wifi/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/esp_eth/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/lwip/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/esp_event/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/espcoredump/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/esp32/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/esp32/ld/esp32_fragments.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/xtensa/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/soc/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/heap/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/freertos/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/newlib/newlib.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/app_trace/linker.lf
+esp-idf/esp32/ld/esp32.project.ld: /home/gungnir/esp/esp-idf/components/esp_gdbstub/linker.lf
 esp-idf/esp32/ld/esp32.project.ld: esp-idf/esp_ringbuf/libesp_ringbuf.a
 esp-idf/esp32/ld/esp32.project.ld: esp-idf/driver/libdriver.a
 esp-idf/esp32/ld/esp32.project.ld: esp-idf/wpa_supplicant/libwpa_supplicant.a
@@ -132,9 +132,9 @@ esp-idf/esp32/ld/esp32.project.ld: esp-idf/ulp/libulp.a
 esp-idf/esp32/ld/esp32.project.ld: esp-idf/unity/libunity.a
 esp-idf/esp32/ld/esp32.project.ld: esp-idf/wifi_provisioning/libwifi_provisioning.a
 esp-idf/esp32/ld/esp32.project.ld: esp-idf/main/libmain.a
-esp-idf/esp32/ld/esp32.project.ld: ../sdkconfig
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ld/esp32.project.ld"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp32 && /home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/tools/ldgen/ldgen.py --config /home/gungnir/esp/esp-idf/examples/get-started/hello_world/sdkconfig --fragments /home/gungnir/esp/esp-idf/components/esp_ringbuf/linker.lf	/home/gungnir/esp/esp-idf/components/spi_flash/linker.lf	/home/gungnir/esp/esp-idf/components/esp_wifi/linker.lf	/home/gungnir/esp/esp-idf/components/esp_eth/linker.lf	/home/gungnir/esp/esp-idf/components/lwip/linker.lf	/home/gungnir/esp/esp-idf/components/esp_event/linker.lf	/home/gungnir/esp/esp-idf/components/espcoredump/linker.lf	/home/gungnir/esp/esp-idf/components/esp32/linker.lf	/home/gungnir/esp/esp-idf/components/esp32/ld/esp32_fragments.lf	/home/gungnir/esp/esp-idf/components/xtensa/linker.lf	/home/gungnir/esp/esp-idf/components/soc/linker.lf	/home/gungnir/esp/esp-idf/components/heap/linker.lf	/home/gungnir/esp/esp-idf/components/freertos/linker.lf	/home/gungnir/esp/esp-idf/components/newlib/newlib.lf	/home/gungnir/esp/esp-idf/components/app_trace/linker.lf	/home/gungnir/esp/esp-idf/components/esp_gdbstub/linker.lf --input /home/gungnir/esp/esp-idf/components/esp32/ld/esp32.project.ld.in --output /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp32/ld/esp32.project.ld --kconfig /home/gungnir/esp/esp-idf/Kconfig --env-file /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/config.env --libraries-file /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/ldgen_libraries --objdump /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump
+esp-idf/esp32/ld/esp32.project.ld: /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/sdkconfig
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ld/esp32.project.ld"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp32 && /home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/tools/ldgen/ldgen.py --config /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/sdkconfig --fragments /home/gungnir/esp/esp-idf/components/esp_ringbuf/linker.lf	/home/gungnir/esp/esp-idf/components/spi_flash/linker.lf	/home/gungnir/esp/esp-idf/components/esp_wifi/linker.lf	/home/gungnir/esp/esp-idf/components/esp_eth/linker.lf	/home/gungnir/esp/esp-idf/components/lwip/linker.lf	/home/gungnir/esp/esp-idf/components/esp_event/linker.lf	/home/gungnir/esp/esp-idf/components/espcoredump/linker.lf	/home/gungnir/esp/esp-idf/components/esp32/linker.lf	/home/gungnir/esp/esp-idf/components/esp32/ld/esp32_fragments.lf	/home/gungnir/esp/esp-idf/components/xtensa/linker.lf	/home/gungnir/esp/esp-idf/components/soc/linker.lf	/home/gungnir/esp/esp-idf/components/heap/linker.lf	/home/gungnir/esp/esp-idf/components/freertos/linker.lf	/home/gungnir/esp/esp-idf/components/newlib/newlib.lf	/home/gungnir/esp/esp-idf/components/app_trace/linker.lf	/home/gungnir/esp/esp-idf/components/esp_gdbstub/linker.lf --input /home/gungnir/esp/esp-idf/components/esp32/ld/esp32.project.ld.in --output /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp32/ld/esp32.project.ld --kconfig /home/gungnir/esp/esp-idf/Kconfig --env-file /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/config.env --libraries-file /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/ldgen_libraries --objdump /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump
 
 __ldgen_output_esp32.project.ld: esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld
 __ldgen_output_esp32.project.ld: esp-idf/esp32/ld/esp32.project.ld
@@ -148,10 +148,10 @@ esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/build: __ldgen_outp
 .PHONY : esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/build
 
 esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp32 && $(CMAKE_COMMAND) -P CMakeFiles/__ldgen_output_esp32.project.ld.dir/cmake_clean.cmake
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp32 && $(CMAKE_COMMAND) -P CMakeFiles/__ldgen_output_esp32.project.ld.dir/cmake_clean.cmake
 .PHONY : esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/clean
 
 esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/examples/get-started/hello_world /home/gungnir/esp/esp-idf/components/esp32 /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp32 /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code /home/gungnir/esp/esp-idf/components/esp32 /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp32 /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/depend
 

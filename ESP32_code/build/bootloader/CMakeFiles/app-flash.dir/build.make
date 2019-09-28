@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader
 
 # Utility rule file for app-flash.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/bu
 include CMakeFiles/app-flash.dir/progress.make
 
 CMakeFiles/app-flash:
-	cd /home/gungnir/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH="/home/gungnir/esp/esp-idf" -D ESPTOOLPY="/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32" -D ESPTOOL_ARGS="write_flash @flash_app_args" -D ESPTOOL_WORKING_DIR="/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader" -P run_esptool.cmake
+	cd /home/gungnir/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH="/home/gungnir/esp/esp-idf" -D ESPTOOLPY="/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32" -D ESPTOOL_ARGS="write_flash @flash_app_args" -D ESPTOOL_WORKING_DIR="/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader" -P run_esptool.cmake
 
 app-flash: CMakeFiles/app-flash
 app-flash: CMakeFiles/app-flash.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/app-flash.dir/clean:
 .PHONY : CMakeFiles/app-flash.dir/clean
 
 CMakeFiles/app-flash.dir/depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/CMakeFiles/app-flash.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/components/bootloader/subproject /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/CMakeFiles/app-flash.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/app-flash.dir/depend
 

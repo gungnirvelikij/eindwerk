@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../../../../components/newlib/platform_include/assert.h
+/home/gungnir/esp/esp-idf/components/newlib/platform_include/assert.h
 sdkconfig.h
 -
 stdlib.h

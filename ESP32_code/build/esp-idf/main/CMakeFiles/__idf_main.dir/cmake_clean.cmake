@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/__idf_main.dir/hello_world_main.c.obj"
+  "CMakeFiles/__idf_main.dir/main.c.obj"
   "libmain.a"
   "libmain.pdb"
 )

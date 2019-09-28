@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/CMakeFiles /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/micro-ecc/CMakeFiles/progress.marks
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/micro-ecc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/CMakeFiles 0
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/CMakeFiles /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/micro-ecc/CMakeFiles/progress.marks
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/micro-ecc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/micro-ecc/clean
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/micro-ecc/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/micro-ecc/preinstall
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/micro-ecc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/micro-ecc/preinstall
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/micro-ecc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/rule:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/rule
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/rule
 .PHONY : esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ __idf_micro-ecc: esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/rule
 
 # fast build rule for target.
 __idf_micro-ecc/fast:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(MAKE) -f esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build.make esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(MAKE) -f esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build.make esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build
 .PHONY : __idf_micro-ecc/fast
 
 micro-ecc/uECC.obj: micro-ecc/uECC.c.obj
@@ -131,7 +131,7 @@ micro-ecc/uECC.obj: micro-ecc/uECC.c.obj
 
 # target to build an object file
 micro-ecc/uECC.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(MAKE) -f esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build.make esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/micro-ecc/uECC.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(MAKE) -f esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build.make esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/micro-ecc/uECC.c.obj
 .PHONY : micro-ecc/uECC.c.obj
 
 micro-ecc/uECC.i: micro-ecc/uECC.c.i
@@ -140,7 +140,7 @@ micro-ecc/uECC.i: micro-ecc/uECC.c.i
 
 # target to preprocess a source file
 micro-ecc/uECC.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(MAKE) -f esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build.make esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/micro-ecc/uECC.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(MAKE) -f esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build.make esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/micro-ecc/uECC.c.i
 .PHONY : micro-ecc/uECC.c.i
 
 micro-ecc/uECC.s: micro-ecc/uECC.c.s
@@ -149,7 +149,7 @@ micro-ecc/uECC.s: micro-ecc/uECC.c.s
 
 # target to generate assembly for a file
 micro-ecc/uECC.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(MAKE) -f esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build.make esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/micro-ecc/uECC.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(MAKE) -f esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build.make esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/micro-ecc/uECC.c.s
 .PHONY : micro-ecc/uECC.c.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

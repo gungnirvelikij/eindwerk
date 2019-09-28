@@ -6,26 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../../../../components/expat/port/include/expat_config.h
-
-../../../../components/newlib/platform_include/assert.h
-sdkconfig.h
--
-stdlib.h
--
-
-../../../../components/newlib/platform_include/errno.h
-
-../../../../components/newlib/platform_include/sys/random.h
-sys/types.h
--
-
-../../../../components/newlib/platform_include/sys/time.h
-_ansi.h
--
-sys/types.h
--
-
 /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/ascii.h
 
 /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/asciitab.h
@@ -243,6 +223,26 @@ stddef.h
 -
 
 /home/gungnir/esp/esp-idf/components/expat/expat/expat/lib/xmltok_ns.c
+
+/home/gungnir/esp/esp-idf/components/expat/port/include/expat_config.h
+
+/home/gungnir/esp/esp-idf/components/newlib/platform_include/assert.h
+sdkconfig.h
+-
+stdlib.h
+-
+
+/home/gungnir/esp/esp-idf/components/newlib/platform_include/errno.h
+
+/home/gungnir/esp/esp-idf/components/newlib/platform_include/sys/random.h
+sys/types.h
+-
+
+/home/gungnir/esp/esp-idf/components/newlib/platform_include/sys/time.h
+_ansi.h
+-
+sys/types.h
+-
 
 config/sdkconfig.h
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/heap/CMakeFiles/progress.marks
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/heap/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles 0
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/heap/CMakeFiles/progress.marks
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/heap/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/heap/clean
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/heap/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/heap/preinstall
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/heap/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/heap/preinstall
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/heap/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/heap/CMakeFiles/__idf_heap.dir/rule:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/heap/CMakeFiles/__idf_heap.dir/rule
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/heap/CMakeFiles/__idf_heap.dir/rule
 .PHONY : esp-idf/heap/CMakeFiles/__idf_heap.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_heap: esp-idf/heap/CMakeFiles/__idf_heap.dir/rule
 
 # fast build rule for target.
 __idf_heap/fast:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/build
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/build
 .PHONY : __idf_heap/fast
 
 heap_caps.obj: heap_caps.c.obj
@@ -177,7 +177,7 @@ heap_caps.obj: heap_caps.c.obj
 
 # target to build an object file
 heap_caps.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.obj
 .PHONY : heap_caps.c.obj
 
 heap_caps.i: heap_caps.c.i
@@ -186,7 +186,7 @@ heap_caps.i: heap_caps.c.i
 
 # target to preprocess a source file
 heap_caps.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.i
 .PHONY : heap_caps.c.i
 
 heap_caps.s: heap_caps.c.s
@@ -195,7 +195,7 @@ heap_caps.s: heap_caps.c.s
 
 # target to generate assembly for a file
 heap_caps.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.s
 .PHONY : heap_caps.c.s
 
 heap_caps_init.obj: heap_caps_init.c.obj
@@ -204,7 +204,7 @@ heap_caps_init.obj: heap_caps_init.c.obj
 
 # target to build an object file
 heap_caps_init.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.obj
 .PHONY : heap_caps_init.c.obj
 
 heap_caps_init.i: heap_caps_init.c.i
@@ -213,7 +213,7 @@ heap_caps_init.i: heap_caps_init.c.i
 
 # target to preprocess a source file
 heap_caps_init.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.i
 .PHONY : heap_caps_init.c.i
 
 heap_caps_init.s: heap_caps_init.c.s
@@ -222,7 +222,7 @@ heap_caps_init.s: heap_caps_init.c.s
 
 # target to generate assembly for a file
 heap_caps_init.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.s
 .PHONY : heap_caps_init.c.s
 
 multi_heap.obj: multi_heap.c.obj
@@ -231,7 +231,7 @@ multi_heap.obj: multi_heap.c.obj
 
 # target to build an object file
 multi_heap.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.obj
 .PHONY : multi_heap.c.obj
 
 multi_heap.i: multi_heap.c.i
@@ -240,7 +240,7 @@ multi_heap.i: multi_heap.c.i
 
 # target to preprocess a source file
 multi_heap.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.i
 .PHONY : multi_heap.c.i
 
 multi_heap.s: multi_heap.c.s
@@ -249,7 +249,7 @@ multi_heap.s: multi_heap.c.s
 
 # target to generate assembly for a file
 multi_heap.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/heap/CMakeFiles/__idf_heap.dir/build.make esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.s
 .PHONY : multi_heap.c.s
 
 # Help Target
@@ -285,6 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

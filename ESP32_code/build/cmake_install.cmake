@@ -1,4 +1,4 @@
-# Install script for directory: /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+# Install script for directory: /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/cmake_install.cmake")
+  include("/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

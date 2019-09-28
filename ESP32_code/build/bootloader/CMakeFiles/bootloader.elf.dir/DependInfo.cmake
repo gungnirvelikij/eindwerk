@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/project_elf_src.c" "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/CMakeFiles/bootloader.elf.dir/project_elf_src.c.obj"
+  "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/project_elf_src.c" "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/CMakeFiles/bootloader.elf.dir/project_elf_src.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -29,14 +29,14 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/soc/CMakeFiles/__idf_soc.dir/DependInfo.cmake"
-  "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/DependInfo.cmake"
-  "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/log/CMakeFiles/__idf_log.dir/DependInfo.cmake"
-  "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/DependInfo.cmake"
-  "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/DependInfo.cmake"
-  "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/DependInfo.cmake"
-  "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/DependInfo.cmake"
-  "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/esp-idf/main/CMakeFiles/__idf_main.dir/DependInfo.cmake"
+  "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/soc/CMakeFiles/__idf_soc.dir/DependInfo.cmake"
+  "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/DependInfo.cmake"
+  "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/log/CMakeFiles/__idf_log.dir/DependInfo.cmake"
+  "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/DependInfo.cmake"
+  "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/DependInfo.cmake"
+  "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/DependInfo.cmake"
+  "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/DependInfo.cmake"
+  "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/esp-idf/main/CMakeFiles/__idf_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

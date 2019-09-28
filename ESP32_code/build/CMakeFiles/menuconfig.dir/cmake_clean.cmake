@@ -4,8 +4,8 @@ file(REMOVE_RECURSE
   "bootloader/bootloader.map"
   "config/sdkconfig.cmake"
   "config/sdkconfig.h"
-  "hello-world.bin"
-  "hello-world.map"
+  "eindwerk_evse.bin"
+  "eindwerk_evse.map"
   "project_elf_src.c"
   "CMakeFiles/menuconfig"
 )

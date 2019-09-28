@@ -6,7 +6,7 @@ C_FLAGS = -mlongcalls -Wno-frame-address   -ffunction-sections -fdata-sections -
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/config -I/home/gungnir/esp/esp-idf/components/soc/esp32/include -I/home/gungnir/esp/esp-idf/components/soc/include -I/home/gungnir/esp/esp-idf/components/log/include -I/home/gungnir/esp/esp-idf/components/esp_rom/include -I/home/gungnir/esp/esp-idf/components/esp_common/include -I/home/gungnir/esp/esp-idf/components/xtensa/include -I/home/gungnir/esp/esp-idf/components/xtensa/esp32/include -I/home/gungnir/esp/esp-idf/components/esp32/include 
+C_INCLUDES = -I/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/config -I/home/gungnir/esp/esp-idf/components/soc/esp32/include -I/home/gungnir/esp/esp-idf/components/soc/include -I/home/gungnir/esp/esp-idf/components/log/include -I/home/gungnir/esp/esp-idf/components/esp_rom/include -I/home/gungnir/esp/esp-idf/components/esp_common/include -I/home/gungnir/esp/esp-idf/components/xtensa/include -I/home/gungnir/esp/esp-idf/components/xtensa/esp32/include -I/home/gungnir/esp/esp-idf/components/esp32/include 
 
 # Custom flags: esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/rtc_clk.c.obj_FLAGS = -fno-jump-tables -fno-tree-switch-conversion
 

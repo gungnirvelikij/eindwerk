@@ -7,11 +7,11 @@ ASM_FLAGS =   -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -n
 
 ASM_DEFINES = 
 
-ASM_INCLUDES = -I/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/config -I/home/gungnir/esp/esp-idf/components/xtensa/include -I/home/gungnir/esp/esp-idf/components/xtensa/esp32/include -I/home/gungnir/esp/esp-idf/components/log/include -I/home/gungnir/esp/esp-idf/components/esp_rom/include -I/home/gungnir/esp/esp-idf/components/esp_common/include -I/home/gungnir/esp/esp-idf/components/esp32/include -I/home/gungnir/esp/esp-idf/components/soc/esp32/include -I/home/gungnir/esp/esp-idf/components/soc/include 
+ASM_INCLUDES = -I/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/config -I/home/gungnir/esp/esp-idf/components/xtensa/include -I/home/gungnir/esp/esp-idf/components/xtensa/esp32/include -I/home/gungnir/esp/esp-idf/components/log/include -I/home/gungnir/esp/esp-idf/components/esp_rom/include -I/home/gungnir/esp/esp-idf/components/esp_common/include -I/home/gungnir/esp/esp-idf/components/esp32/include -I/home/gungnir/esp/esp-idf/components/soc/esp32/include -I/home/gungnir/esp/esp-idf/components/soc/include 
 
 C_FLAGS = -mlongcalls -Wno-frame-address   -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -ggdb -Og -fno-stack-protector -std=gnu99 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v4.1-dev-281-g96b96ae24\" -DGCC_NOT_5_2_0 -DESP_PLATFORM -DBOOTLOADER_BUILD=1
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/config -I/home/gungnir/esp/esp-idf/components/xtensa/include -I/home/gungnir/esp/esp-idf/components/xtensa/esp32/include -I/home/gungnir/esp/esp-idf/components/log/include -I/home/gungnir/esp/esp-idf/components/esp_rom/include -I/home/gungnir/esp/esp-idf/components/esp_common/include -I/home/gungnir/esp/esp-idf/components/esp32/include -I/home/gungnir/esp/esp-idf/components/soc/esp32/include -I/home/gungnir/esp/esp-idf/components/soc/include 
+C_INCLUDES = -I/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/config -I/home/gungnir/esp/esp-idf/components/xtensa/include -I/home/gungnir/esp/esp-idf/components/xtensa/esp32/include -I/home/gungnir/esp/esp-idf/components/log/include -I/home/gungnir/esp/esp-idf/components/esp_rom/include -I/home/gungnir/esp/esp-idf/components/esp_common/include -I/home/gungnir/esp/esp-idf/components/esp32/include -I/home/gungnir/esp/esp-idf/components/soc/esp32/include -I/home/gungnir/esp/esp-idf/components/soc/include 
 

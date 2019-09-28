@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hello-world.elf.dir/depend.make
@@ -58,21 +58,21 @@ include CMakeFiles/hello-world.elf.dir/progress.make
 include CMakeFiles/hello-world.elf.dir/flags.make
 
 project_elf_src.c:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating project_elf_src.c"
-	/usr/bin/cmake -E touch /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/project_elf_src.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating project_elf_src.c"
+	/usr/bin/cmake -E touch /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/project_elf_src.c
 
 CMakeFiles/hello-world.elf.dir/project_elf_src.c.obj: CMakeFiles/hello-world.elf.dir/flags.make
 CMakeFiles/hello-world.elf.dir/project_elf_src.c.obj: project_elf_src.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/hello-world.elf.dir/project_elf_src.c.obj"
-	/home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hello-world.elf.dir/project_elf_src.c.obj   -c /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/project_elf_src.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/hello-world.elf.dir/project_elf_src.c.obj"
+	/home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hello-world.elf.dir/project_elf_src.c.obj   -c /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/project_elf_src.c
 
 CMakeFiles/hello-world.elf.dir/project_elf_src.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hello-world.elf.dir/project_elf_src.c.i"
-	/home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/project_elf_src.c > CMakeFiles/hello-world.elf.dir/project_elf_src.c.i
+	/home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/project_elf_src.c > CMakeFiles/hello-world.elf.dir/project_elf_src.c.i
 
 CMakeFiles/hello-world.elf.dir/project_elf_src.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hello-world.elf.dir/project_elf_src.c.s"
-	/home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/project_elf_src.c -o CMakeFiles/hello-world.elf.dir/project_elf_src.c.s
+	/home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/project_elf_src.c -o CMakeFiles/hello-world.elf.dir/project_elf_src.c.s
 
 # Object files for target hello-world.elf
 hello__world_elf_OBJECTS = \
@@ -262,7 +262,7 @@ hello-world.elf: /home/gungnir/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom
 hello-world.elf: /home/gungnir/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
 hello-world.elf: /home/gungnir/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
 hello-world.elf: CMakeFiles/hello-world.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable hello-world.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable hello-world.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello-world.elf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -275,6 +275,6 @@ CMakeFiles/hello-world.elf.dir/clean:
 .PHONY : CMakeFiles/hello-world.elf.dir/clean
 
 CMakeFiles/hello-world.elf.dir/depend: project_elf_src.c
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/examples/get-started/hello_world /home/gungnir/esp/esp-idf/examples/get-started/hello_world /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/hello-world.elf.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles/hello-world.elf.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hello-world.elf.dir/depend
 

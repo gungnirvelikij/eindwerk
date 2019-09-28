@@ -1,4 +1,4 @@
-# Install script for directory: /home/gungnir/esp/esp-idf/examples/get-started/hello_world/main
+# Install script for directory: /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

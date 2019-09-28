@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,19 +155,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named size-files
-
-# Build rule for target.
-size-files: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 size-files
-.PHONY : size-files
-
-# fast build rule for target.
-size-files/fast:
-	$(MAKE) -f CMakeFiles/size-files.dir/build.make CMakeFiles/size-files.dir/build
-.PHONY : size-files/fast
 
 #=============================================================================
 # Target rules for targets named gen_project_binary
@@ -220,19 +207,6 @@ flash: cmake_check_build_system
 flash/fast:
 	$(MAKE) -f CMakeFiles/flash.dir/build.make CMakeFiles/flash.dir/build
 .PHONY : flash/fast
-
-#=============================================================================
-# Target rules for targets named hello-world.elf
-
-# Build rule for target.
-hello-world.elf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello-world.elf
-.PHONY : hello-world.elf
-
-# fast build rule for target.
-hello-world.elf/fast:
-	$(MAKE) -f CMakeFiles/hello-world.elf.dir/build.make CMakeFiles/hello-world.elf.dir/build
-.PHONY : hello-world.elf/fast
 
 #=============================================================================
 # Target rules for targets named mconf-idf
@@ -298,6 +272,32 @@ app-flash: cmake_check_build_system
 app-flash/fast:
 	$(MAKE) -f CMakeFiles/app-flash.dir/build.make CMakeFiles/app-flash.dir/build
 .PHONY : app-flash/fast
+
+#=============================================================================
+# Target rules for targets named size-files
+
+# Build rule for target.
+size-files: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 size-files
+.PHONY : size-files
+
+# fast build rule for target.
+size-files/fast:
+	$(MAKE) -f CMakeFiles/size-files.dir/build.make CMakeFiles/size-files.dir/build
+.PHONY : size-files/fast
+
+#=============================================================================
+# Target rules for targets named eindwerk_evse.elf
+
+# Build rule for target.
+eindwerk_evse.elf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 eindwerk_evse.elf
+.PHONY : eindwerk_evse.elf
+
+# fast build rule for target.
+eindwerk_evse.elf/fast:
+	$(MAKE) -f CMakeFiles/eindwerk_evse.elf.dir/build.make CMakeFiles/eindwerk_evse.elf.dir/build
+.PHONY : eindwerk_evse.elf/fast
 
 #=============================================================================
 # Target rules for targets named size-components
@@ -1267,7 +1267,7 @@ project_elf_src.obj: project_elf_src.c.obj
 
 # target to build an object file
 project_elf_src.c.obj:
-	$(MAKE) -f CMakeFiles/hello-world.elf.dir/build.make CMakeFiles/hello-world.elf.dir/project_elf_src.c.obj
+	$(MAKE) -f CMakeFiles/eindwerk_evse.elf.dir/build.make CMakeFiles/eindwerk_evse.elf.dir/project_elf_src.c.obj
 .PHONY : project_elf_src.c.obj
 
 project_elf_src.i: project_elf_src.c.i
@@ -1276,7 +1276,7 @@ project_elf_src.i: project_elf_src.c.i
 
 # target to preprocess a source file
 project_elf_src.c.i:
-	$(MAKE) -f CMakeFiles/hello-world.elf.dir/build.make CMakeFiles/hello-world.elf.dir/project_elf_src.c.i
+	$(MAKE) -f CMakeFiles/eindwerk_evse.elf.dir/build.make CMakeFiles/eindwerk_evse.elf.dir/project_elf_src.c.i
 .PHONY : project_elf_src.c.i
 
 project_elf_src.s: project_elf_src.c.s
@@ -1285,7 +1285,7 @@ project_elf_src.s: project_elf_src.c.s
 
 # target to generate assembly for a file
 project_elf_src.c.s:
-	$(MAKE) -f CMakeFiles/hello-world.elf.dir/build.make CMakeFiles/hello-world.elf.dir/project_elf_src.c.s
+	$(MAKE) -f CMakeFiles/eindwerk_evse.elf.dir/build.make CMakeFiles/eindwerk_evse.elf.dir/project_elf_src.c.s
 .PHONY : project_elf_src.c.s
 
 # Help Target
@@ -1299,18 +1299,18 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... size-files"
 	@echo "... gen_project_binary"
 	@echo "... edit_cache"
 	@echo "... _project_elf_src"
 	@echo "... confserver"
 	@echo "... flash"
-	@echo "... hello-world.elf"
 	@echo "... mconf-idf"
 	@echo "... bootloader"
 	@echo "... menuconfig"
 	@echo "... app"
 	@echo "... app-flash"
+	@echo "... size-files"
+	@echo "... eindwerk_evse.elf"
 	@echo "... size-components"
 	@echo "... size"
 	@echo "... __idf_esp_ringbuf"

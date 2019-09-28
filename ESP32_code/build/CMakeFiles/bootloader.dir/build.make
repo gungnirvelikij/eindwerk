@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 # Utility rule file for bootloader.
 
@@ -64,52 +64,52 @@ CMakeFiles/bootloader-complete: bootloader-prefix/src/bootloader-stamp/bootloade
 CMakeFiles/bootloader-complete: bootloader-prefix/src/bootloader-stamp/bootloader-configure
 CMakeFiles/bootloader-complete: bootloader-prefix/src/bootloader-stamp/bootloader-build
 CMakeFiles/bootloader-complete: bootloader-prefix/src/bootloader-stamp/bootloader-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'bootloader'"
-	/usr/bin/cmake -E make_directory /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles
-	/usr/bin/cmake -E touch /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/bootloader-complete
-	/usr/bin/cmake -E touch /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'bootloader'"
+	/usr/bin/cmake -E make_directory /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles
+	/usr/bin/cmake -E touch /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles/bootloader-complete
+	/usr/bin/cmake -E touch /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader-prefix/src/bootloader-stamp/bootloader-done
 
 bootloader-prefix/src/bootloader-stamp/bootloader-install: bootloader-prefix/src/bootloader-stamp/bootloader-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No install step for 'bootloader'"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && /usr/bin/cmake -E echo_append
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && /usr/bin/cmake -E touch /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No install step for 'bootloader'"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && /usr/bin/cmake -E echo_append
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && /usr/bin/cmake -E touch /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader-prefix/src/bootloader-stamp/bootloader-install
 
 bootloader-prefix/src/bootloader-stamp/bootloader-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'bootloader'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'bootloader'"
 	/usr/bin/cmake -E make_directory /home/gungnir/esp/esp-idf/components/bootloader/subproject
-	/usr/bin/cmake -E make_directory /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader
-	/usr/bin/cmake -E make_directory /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix
-	/usr/bin/cmake -E make_directory /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/tmp
-	/usr/bin/cmake -E make_directory /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp
-	/usr/bin/cmake -E make_directory /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src
-	/usr/bin/cmake -E make_directory /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp
-	/usr/bin/cmake -E touch /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir
+	/usr/bin/cmake -E make_directory /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader
+	/usr/bin/cmake -E make_directory /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader-prefix
+	/usr/bin/cmake -E make_directory /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader-prefix/tmp
+	/usr/bin/cmake -E make_directory /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader-prefix/src/bootloader-stamp
+	/usr/bin/cmake -E make_directory /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader-prefix/src
+	/usr/bin/cmake -E make_directory /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader-prefix/src/bootloader-stamp
+	/usr/bin/cmake -E touch /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir
 
 bootloader-prefix/src/bootloader-stamp/bootloader-download: bootloader-prefix/src/bootloader-stamp/bootloader-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'bootloader'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'bootloader'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-download
+	/usr/bin/cmake -E touch /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader-prefix/src/bootloader-stamp/bootloader-download
 
 bootloader-prefix/src/bootloader-stamp/bootloader-update: bootloader-prefix/src/bootloader-stamp/bootloader-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No update step for 'bootloader'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No update step for 'bootloader'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-update
+	/usr/bin/cmake -E touch /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader-prefix/src/bootloader-stamp/bootloader-update
 
 bootloader-prefix/src/bootloader-stamp/bootloader-patch: bootloader-prefix/src/bootloader-stamp/bootloader-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "No patch step for 'bootloader'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "No patch step for 'bootloader'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch
+	/usr/bin/cmake -E touch /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch
 
 bootloader-prefix/src/bootloader-stamp/bootloader-configure: bootloader-prefix/tmp/bootloader-cfgcmd.txt
 bootloader-prefix/src/bootloader-stamp/bootloader-configure: bootloader-prefix/src/bootloader-stamp/bootloader-update
 bootloader-prefix/src/bootloader-stamp/bootloader-configure: bootloader-prefix/src/bootloader-stamp/bootloader-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing configure step for 'bootloader'"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && /usr/bin/cmake -DSDKCONFIG=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/sdkconfig -DIDF_PATH=/home/gungnir/esp/esp-idf -DIDF_TARGET=esp32 -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python -DEXTRA_COMPONENT_DIRS=/home/gungnir/esp/esp-idf/components/bootloader -DLEGACY_INCLUDE_COMMON_HEADERS= "-GUnix Makefiles" /home/gungnir/esp/esp-idf/components/bootloader/subproject
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && /usr/bin/cmake -E touch /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing configure step for 'bootloader'"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && /usr/bin/cmake -DSDKCONFIG=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/sdkconfig -DIDF_PATH=/home/gungnir/esp/esp-idf -DIDF_TARGET=esp32 -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python -DEXTRA_COMPONENT_DIRS=/home/gungnir/esp/esp-idf/components/bootloader -DLEGACY_INCLUDE_COMMON_HEADERS= "-GUnix Makefiles" /home/gungnir/esp/esp-idf/components/bootloader/subproject
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && /usr/bin/cmake -E touch /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure
 
 bootloader-prefix/src/bootloader-stamp/bootloader-build: bootloader-prefix/src/bootloader-stamp/bootloader-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing build step for 'bootloader'"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(MAKE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing build step for 'bootloader'"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(MAKE)
 
 bootloader: CMakeFiles/bootloader
 bootloader: CMakeFiles/bootloader-complete
@@ -134,6 +134,6 @@ CMakeFiles/bootloader.dir/clean:
 .PHONY : CMakeFiles/bootloader.dir/clean
 
 CMakeFiles/bootloader.dir/depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/examples/get-started/hello_world /home/gungnir/esp/esp-idf/examples/get-started/hello_world /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/bootloader.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles/bootloader.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/bootloader.dir/depend
 

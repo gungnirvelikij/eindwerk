@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/mconf-idf"
+			"file" : "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles/mconf-idf"
 		},
 		{
-			"file" : "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/mconf-idf.rule"
+			"file" : "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles/mconf-idf.rule"
 		},
 		{
-			"file" : "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/mconf-idf-complete.rule"
+			"file" : "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles/mconf-idf-complete.rule"
 		},
 		{
-			"file" : "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule"
+			"file" : "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule"
 		},
 		{
-			"file" : "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule"
+			"file" : "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule"
 		},
 		{
-			"file" : "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule"
+			"file" : "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule"
 		},
 		{
-			"file" : "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule"
+			"file" : "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule"
 		},
 		{
-			"file" : "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule"
+			"file" : "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule"
 		},
 		{
-			"file" : "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule"
+			"file" : "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule"
 		},
 		{
-			"file" : "/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule"
+			"file" : "/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule"
 		}
 	],
 	"target" : 

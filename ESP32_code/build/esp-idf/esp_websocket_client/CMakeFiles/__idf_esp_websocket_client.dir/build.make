@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 # Include any dependencies generated for this target.
 include esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/depend.make
@@ -58,17 +58,17 @@ include esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/p
 include esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/flags.make
 
 esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.obj: esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/flags.make
-esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.obj: ../../../../components/esp_websocket_client/esp_websocket_client.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.obj"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp_websocket_client && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.obj   -c /home/gungnir/esp/esp-idf/components/esp_websocket_client/esp_websocket_client.c
+esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.obj: /home/gungnir/esp/esp-idf/components/esp_websocket_client/esp_websocket_client.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.obj"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp_websocket_client && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.obj   -c /home/gungnir/esp/esp-idf/components/esp_websocket_client/esp_websocket_client.c
 
 esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.i"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp_websocket_client && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/esp_websocket_client/esp_websocket_client.c > CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp_websocket_client && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/gungnir/esp/esp-idf/components/esp_websocket_client/esp_websocket_client.c > CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.i
 
 esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.s"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp_websocket_client && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/esp_websocket_client/esp_websocket_client.c -o CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp_websocket_client && /home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gungnir/esp/esp-idf/components/esp_websocket_client/esp_websocket_client.c -o CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.s
 
 # Object files for target __idf_esp_websocket_client
 __idf_esp_websocket_client_OBJECTS = \
@@ -80,9 +80,9 @@ __idf_esp_websocket_client_EXTERNAL_OBJECTS =
 esp-idf/esp_websocket_client/libesp_websocket_client.a: esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/esp_websocket_client.c.obj
 esp-idf/esp_websocket_client/libesp_websocket_client.a: esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/build.make
 esp-idf/esp_websocket_client/libesp_websocket_client.a: esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libesp_websocket_client.a"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp_websocket_client && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_websocket_client.dir/cmake_clean_target.cmake
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp_websocket_client && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_esp_websocket_client.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libesp_websocket_client.a"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp_websocket_client && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_websocket_client.dir/cmake_clean_target.cmake
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp_websocket_client && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_esp_websocket_client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/build: esp-idf/esp_websocket_client/libesp_websocket_client.a
@@ -90,10 +90,10 @@ esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/build: es
 .PHONY : esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/build
 
 esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp_websocket_client && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_websocket_client.dir/cmake_clean.cmake
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp_websocket_client && $(CMAKE_COMMAND) -P CMakeFiles/__idf_esp_websocket_client.dir/cmake_clean.cmake
 .PHONY : esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/clean
 
 esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/examples/get-started/hello_world /home/gungnir/esp/esp-idf/components/esp_websocket_client /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp_websocket_client /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code /home/gungnir/esp/esp-idf/components/esp_websocket_client /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp_websocket_client /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/esp_websocket_client/CMakeFiles/__idf_esp_websocket_client.dir/depend
 

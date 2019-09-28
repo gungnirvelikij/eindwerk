@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 # Utility rule file for partition_table.
 
@@ -56,10 +56,10 @@ include esp-idf/partition_table/CMakeFiles/partition_table.dir/progress.make
 esp-idf/partition_table/CMakeFiles/partition_table: partition_table/partition-table.bin
 
 
-partition_table/partition-table.bin: ../../../../components/partition_table/partitions_singleapp.csv
-partition_table/partition-table.bin: ../../../../components/partition_table/gen_esp32part.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../partition_table/partition-table.bin"
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/partition_table && /home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/components/partition_table/gen_esp32part.py -q --offset 0x8000 --disable-md5sum --flash-size 2MB /home/gungnir/esp/esp-idf/components/partition_table/partitions_singleapp.csv /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/partition_table/partition-table.bin
+partition_table/partition-table.bin: /home/gungnir/esp/esp-idf/components/partition_table/partitions_singleapp.csv
+partition_table/partition-table.bin: /home/gungnir/esp/esp-idf/components/partition_table/gen_esp32part.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../partition_table/partition-table.bin"
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/partition_table && /home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/components/partition_table/gen_esp32part.py -q --offset 0x8000 --disable-md5sum --flash-size 2MB /home/gungnir/esp/esp-idf/components/partition_table/partitions_singleapp.csv /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/partition_table/partition-table.bin
 
 partition_table: esp-idf/partition_table/CMakeFiles/partition_table
 partition_table: partition_table/partition-table.bin
@@ -73,10 +73,10 @@ esp-idf/partition_table/CMakeFiles/partition_table.dir/build: partition_table
 .PHONY : esp-idf/partition_table/CMakeFiles/partition_table.dir/build
 
 esp-idf/partition_table/CMakeFiles/partition_table.dir/clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/partition_table && $(CMAKE_COMMAND) -P CMakeFiles/partition_table.dir/cmake_clean.cmake
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/partition_table && $(CMAKE_COMMAND) -P CMakeFiles/partition_table.dir/cmake_clean.cmake
 .PHONY : esp-idf/partition_table/CMakeFiles/partition_table.dir/clean
 
 esp-idf/partition_table/CMakeFiles/partition_table.dir/depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/examples/get-started/hello_world /home/gungnir/esp/esp-idf/components/partition_table /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/partition_table /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/partition_table/CMakeFiles/partition_table.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code /home/gungnir/esp/esp-idf/components/partition_table /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/partition_table /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/partition_table/CMakeFiles/partition_table.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/partition_table/CMakeFiles/partition_table.dir/depend
 

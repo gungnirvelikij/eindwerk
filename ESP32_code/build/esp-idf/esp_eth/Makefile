@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world
+CMAKE_SOURCE_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/esp-idf/esp_eth/CMakeFiles/progress.marks
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_eth/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles 0
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/esp-idf/esp_eth/CMakeFiles/progress.marks
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_eth/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_eth/clean
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_eth/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_eth/preinstall
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_eth/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_eth/preinstall
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_eth/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/rule:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/rule
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/rule
 .PHONY : esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_esp_eth: esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/rule
 
 # fast build rule for target.
 __idf_esp_eth/fast:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build
 .PHONY : __idf_esp_eth/fast
 
 src/esp_eth.obj: src/esp_eth.c.obj
@@ -177,7 +177,7 @@ src/esp_eth.obj: src/esp_eth.c.obj
 
 # target to build an object file
 src/esp_eth.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj
 .PHONY : src/esp_eth.c.obj
 
 src/esp_eth.i: src/esp_eth.c.i
@@ -186,7 +186,7 @@ src/esp_eth.i: src/esp_eth.c.i
 
 # target to preprocess a source file
 src/esp_eth.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.i
 .PHONY : src/esp_eth.c.i
 
 src/esp_eth.s: src/esp_eth.c.s
@@ -195,7 +195,7 @@ src/esp_eth.s: src/esp_eth.c.s
 
 # target to generate assembly for a file
 src/esp_eth.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.s
 .PHONY : src/esp_eth.c.s
 
 src/esp_eth_mac_dm9051.obj: src/esp_eth_mac_dm9051.c.obj
@@ -204,7 +204,7 @@ src/esp_eth_mac_dm9051.obj: src/esp_eth_mac_dm9051.c.obj
 
 # target to build an object file
 src/esp_eth_mac_dm9051.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_dm9051.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_dm9051.c.obj
 .PHONY : src/esp_eth_mac_dm9051.c.obj
 
 src/esp_eth_mac_dm9051.i: src/esp_eth_mac_dm9051.c.i
@@ -213,7 +213,7 @@ src/esp_eth_mac_dm9051.i: src/esp_eth_mac_dm9051.c.i
 
 # target to preprocess a source file
 src/esp_eth_mac_dm9051.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_dm9051.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_dm9051.c.i
 .PHONY : src/esp_eth_mac_dm9051.c.i
 
 src/esp_eth_mac_dm9051.s: src/esp_eth_mac_dm9051.c.s
@@ -222,7 +222,7 @@ src/esp_eth_mac_dm9051.s: src/esp_eth_mac_dm9051.c.s
 
 # target to generate assembly for a file
 src/esp_eth_mac_dm9051.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_dm9051.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_dm9051.c.s
 .PHONY : src/esp_eth_mac_dm9051.c.s
 
 src/esp_eth_mac_esp32.obj: src/esp_eth_mac_esp32.c.obj
@@ -231,7 +231,7 @@ src/esp_eth_mac_esp32.obj: src/esp_eth_mac_esp32.c.obj
 
 # target to build an object file
 src/esp_eth_mac_esp32.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_esp32.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_esp32.c.obj
 .PHONY : src/esp_eth_mac_esp32.c.obj
 
 src/esp_eth_mac_esp32.i: src/esp_eth_mac_esp32.c.i
@@ -240,7 +240,7 @@ src/esp_eth_mac_esp32.i: src/esp_eth_mac_esp32.c.i
 
 # target to preprocess a source file
 src/esp_eth_mac_esp32.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_esp32.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_esp32.c.i
 .PHONY : src/esp_eth_mac_esp32.c.i
 
 src/esp_eth_mac_esp32.s: src/esp_eth_mac_esp32.c.s
@@ -249,7 +249,7 @@ src/esp_eth_mac_esp32.s: src/esp_eth_mac_esp32.c.s
 
 # target to generate assembly for a file
 src/esp_eth_mac_esp32.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_esp32.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_esp32.c.s
 .PHONY : src/esp_eth_mac_esp32.c.s
 
 src/esp_eth_phy_dm9051.obj: src/esp_eth_phy_dm9051.c.obj
@@ -258,7 +258,7 @@ src/esp_eth_phy_dm9051.obj: src/esp_eth_phy_dm9051.c.obj
 
 # target to build an object file
 src/esp_eth_phy_dm9051.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_dm9051.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_dm9051.c.obj
 .PHONY : src/esp_eth_phy_dm9051.c.obj
 
 src/esp_eth_phy_dm9051.i: src/esp_eth_phy_dm9051.c.i
@@ -267,7 +267,7 @@ src/esp_eth_phy_dm9051.i: src/esp_eth_phy_dm9051.c.i
 
 # target to preprocess a source file
 src/esp_eth_phy_dm9051.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_dm9051.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_dm9051.c.i
 .PHONY : src/esp_eth_phy_dm9051.c.i
 
 src/esp_eth_phy_dm9051.s: src/esp_eth_phy_dm9051.c.s
@@ -276,7 +276,7 @@ src/esp_eth_phy_dm9051.s: src/esp_eth_phy_dm9051.c.s
 
 # target to generate assembly for a file
 src/esp_eth_phy_dm9051.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_dm9051.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_dm9051.c.s
 .PHONY : src/esp_eth_phy_dm9051.c.s
 
 src/esp_eth_phy_dp83848.obj: src/esp_eth_phy_dp83848.c.obj
@@ -285,7 +285,7 @@ src/esp_eth_phy_dp83848.obj: src/esp_eth_phy_dp83848.c.obj
 
 # target to build an object file
 src/esp_eth_phy_dp83848.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_dp83848.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_dp83848.c.obj
 .PHONY : src/esp_eth_phy_dp83848.c.obj
 
 src/esp_eth_phy_dp83848.i: src/esp_eth_phy_dp83848.c.i
@@ -294,7 +294,7 @@ src/esp_eth_phy_dp83848.i: src/esp_eth_phy_dp83848.c.i
 
 # target to preprocess a source file
 src/esp_eth_phy_dp83848.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_dp83848.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_dp83848.c.i
 .PHONY : src/esp_eth_phy_dp83848.c.i
 
 src/esp_eth_phy_dp83848.s: src/esp_eth_phy_dp83848.c.s
@@ -303,7 +303,7 @@ src/esp_eth_phy_dp83848.s: src/esp_eth_phy_dp83848.c.s
 
 # target to generate assembly for a file
 src/esp_eth_phy_dp83848.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_dp83848.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_dp83848.c.s
 .PHONY : src/esp_eth_phy_dp83848.c.s
 
 src/esp_eth_phy_ip101.obj: src/esp_eth_phy_ip101.c.obj
@@ -312,7 +312,7 @@ src/esp_eth_phy_ip101.obj: src/esp_eth_phy_ip101.c.obj
 
 # target to build an object file
 src/esp_eth_phy_ip101.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_ip101.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_ip101.c.obj
 .PHONY : src/esp_eth_phy_ip101.c.obj
 
 src/esp_eth_phy_ip101.i: src/esp_eth_phy_ip101.c.i
@@ -321,7 +321,7 @@ src/esp_eth_phy_ip101.i: src/esp_eth_phy_ip101.c.i
 
 # target to preprocess a source file
 src/esp_eth_phy_ip101.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_ip101.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_ip101.c.i
 .PHONY : src/esp_eth_phy_ip101.c.i
 
 src/esp_eth_phy_ip101.s: src/esp_eth_phy_ip101.c.s
@@ -330,7 +330,7 @@ src/esp_eth_phy_ip101.s: src/esp_eth_phy_ip101.c.s
 
 # target to generate assembly for a file
 src/esp_eth_phy_ip101.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_ip101.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_ip101.c.s
 .PHONY : src/esp_eth_phy_ip101.c.s
 
 src/esp_eth_phy_lan8720.obj: src/esp_eth_phy_lan8720.c.obj
@@ -339,7 +339,7 @@ src/esp_eth_phy_lan8720.obj: src/esp_eth_phy_lan8720.c.obj
 
 # target to build an object file
 src/esp_eth_phy_lan8720.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_lan8720.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_lan8720.c.obj
 .PHONY : src/esp_eth_phy_lan8720.c.obj
 
 src/esp_eth_phy_lan8720.i: src/esp_eth_phy_lan8720.c.i
@@ -348,7 +348,7 @@ src/esp_eth_phy_lan8720.i: src/esp_eth_phy_lan8720.c.i
 
 # target to preprocess a source file
 src/esp_eth_phy_lan8720.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_lan8720.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_lan8720.c.i
 .PHONY : src/esp_eth_phy_lan8720.c.i
 
 src/esp_eth_phy_lan8720.s: src/esp_eth_phy_lan8720.c.s
@@ -357,7 +357,7 @@ src/esp_eth_phy_lan8720.s: src/esp_eth_phy_lan8720.c.s
 
 # target to generate assembly for a file
 src/esp_eth_phy_lan8720.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_lan8720.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_lan8720.c.s
 .PHONY : src/esp_eth_phy_lan8720.c.s
 
 src/esp_eth_phy_rtl8201.obj: src/esp_eth_phy_rtl8201.c.obj
@@ -366,7 +366,7 @@ src/esp_eth_phy_rtl8201.obj: src/esp_eth_phy_rtl8201.c.obj
 
 # target to build an object file
 src/esp_eth_phy_rtl8201.c.obj:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_rtl8201.c.obj
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_rtl8201.c.obj
 .PHONY : src/esp_eth_phy_rtl8201.c.obj
 
 src/esp_eth_phy_rtl8201.i: src/esp_eth_phy_rtl8201.c.i
@@ -375,7 +375,7 @@ src/esp_eth_phy_rtl8201.i: src/esp_eth_phy_rtl8201.c.i
 
 # target to preprocess a source file
 src/esp_eth_phy_rtl8201.c.i:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_rtl8201.c.i
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_rtl8201.c.i
 .PHONY : src/esp_eth_phy_rtl8201.c.i
 
 src/esp_eth_phy_rtl8201.s: src/esp_eth_phy_rtl8201.c.s
@@ -384,7 +384,7 @@ src/esp_eth_phy_rtl8201.s: src/esp_eth_phy_rtl8201.c.s
 
 # target to generate assembly for a file
 src/esp_eth_phy_rtl8201.c.s:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_rtl8201.c.s
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(MAKE) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_rtl8201.c.s
 .PHONY : src/esp_eth_phy_rtl8201.c.s
 
 # Help Target
@@ -435,6 +435,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

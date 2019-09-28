@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../../../../components/jsmn/include/jsmn.h
+/home/gungnir/esp/esp-idf/components/jsmn/include/jsmn.h
 stddef.h
 -
 

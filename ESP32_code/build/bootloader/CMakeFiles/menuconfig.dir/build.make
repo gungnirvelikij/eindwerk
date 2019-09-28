@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/gungnir/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader
+CMAKE_BINARY_DIR = /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader
 
 # Utility rule file for menuconfig.
 
@@ -54,9 +54,9 @@ CMAKE_BINARY_DIR = /home/gungnir/esp/esp-idf/examples/get-started/hello_world/bu
 include CMakeFiles/menuconfig.dir/progress.make
 
 CMakeFiles/menuconfig:
-	/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/tools/kconfig_new/confgen.py --kconfig /home/gungnir/esp/esp-idf/Kconfig --sdkconfig-rename /home/gungnir/esp/esp-idf/sdkconfig.rename --config /home/gungnir/esp/esp-idf/examples/get-started/hello_world/sdkconfig --env-file /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/config.env --env IDF_TARGET=esp32 --output config /home/gungnir/esp/esp-idf/examples/get-started/hello_world/sdkconfig
-	/usr/bin/cmake -E env COMPONENT_KCONFIGS=/home/gungnir/esp/esp-idf/components/efuse/Kconfig\ /home/gungnir/esp/esp-idf/components/esp32/Kconfig\ /home/gungnir/esp/esp-idf/components/esp_common/Kconfig\ /home/gungnir/esp/esp-idf/components/log/Kconfig\ /home/gungnir/esp/esp-idf/components/spi_flash/Kconfig COMPONENT_KCONFIGS_PROJBUILD=/home/gungnir/esp/esp-idf/components/bootloader/Kconfig.projbuild\ /home/gungnir/esp/esp-idf/components/esptool_py/Kconfig.projbuild\ /home/gungnir/esp/esp-idf/components/partition_table/Kconfig.projbuild IDF_CMAKE=y KCONFIG_CONFIG=/home/gungnir/esp/esp-idf/examples/get-started/hello_world/sdkconfig IDF_TARGET=esp32 /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/kconfig_bin/mconf-idf /home/gungnir/esp/esp-idf/Kconfig
-	/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/tools/kconfig_new/confgen.py --kconfig /home/gungnir/esp/esp-idf/Kconfig --sdkconfig-rename /home/gungnir/esp/esp-idf/sdkconfig.rename --config /home/gungnir/esp/esp-idf/examples/get-started/hello_world/sdkconfig --env-file /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/config.env --env IDF_TARGET=esp32 --output config /home/gungnir/esp/esp-idf/examples/get-started/hello_world/sdkconfig
+	/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/tools/kconfig_new/confgen.py --kconfig /home/gungnir/esp/esp-idf/Kconfig --sdkconfig-rename /home/gungnir/esp/esp-idf/sdkconfig.rename --config /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/sdkconfig --env-file /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/config.env --env IDF_TARGET=esp32 --output config /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/sdkconfig
+	/usr/bin/cmake -E env COMPONENT_KCONFIGS=/home/gungnir/esp/esp-idf/components/efuse/Kconfig\ /home/gungnir/esp/esp-idf/components/esp32/Kconfig\ /home/gungnir/esp/esp-idf/components/esp_common/Kconfig\ /home/gungnir/esp/esp-idf/components/log/Kconfig\ /home/gungnir/esp/esp-idf/components/spi_flash/Kconfig COMPONENT_KCONFIGS_PROJBUILD=/home/gungnir/esp/esp-idf/components/bootloader/Kconfig.projbuild\ /home/gungnir/esp/esp-idf/components/esptool_py/Kconfig.projbuild\ /home/gungnir/esp/esp-idf/components/partition_table/Kconfig.projbuild IDF_CMAKE=y KCONFIG_CONFIG=/HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/sdkconfig IDF_TARGET=esp32 /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/kconfig_bin/mconf-idf /home/gungnir/esp/esp-idf/Kconfig
+	/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin/python /home/gungnir/esp/esp-idf/tools/kconfig_new/confgen.py --kconfig /home/gungnir/esp/esp-idf/Kconfig --sdkconfig-rename /home/gungnir/esp/esp-idf/sdkconfig.rename --config /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/sdkconfig --env-file /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/config.env --env IDF_TARGET=esp32 --output config /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/sdkconfig
 
 menuconfig: CMakeFiles/menuconfig
 menuconfig: CMakeFiles/menuconfig.dir/build.make
@@ -73,6 +73,6 @@ CMakeFiles/menuconfig.dir/clean:
 .PHONY : CMakeFiles/menuconfig.dir/clean
 
 CMakeFiles/menuconfig.dir/depend:
-	cd /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader /home/gungnir/esp/esp-idf/examples/get-started/hello_world/build/bootloader/CMakeFiles/menuconfig.dir/DependInfo.cmake --color=$(COLOR)
+	cd /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gungnir/esp/esp-idf/components/bootloader/subproject /home/gungnir/esp/esp-idf/components/bootloader/subproject /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader /HDD/Documents/projecten/eindwerk/eindwerk_code/ESP32_code/build/bootloader/CMakeFiles/menuconfig.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/menuconfig.dir/depend
 
