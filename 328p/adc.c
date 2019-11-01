@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "adc.h"
 
 void init_interrupts(void){
 	PCICR |= (1<<PCIE1);
