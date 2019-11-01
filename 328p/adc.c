@@ -1,3 +1,10 @@
+#include <util/delay.h>
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 void init_interrupts(void){
 	PCICR |= (1<<PCIE1);
 	PCMSK1 |= (1<<PCINT8);
