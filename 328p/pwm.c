@@ -1,9 +1,4 @@
-#include <util/delay.h>
-#include <avr/io.h>
-#include <avr/interrupt.h>
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "pwm.h"
 
 void pwm_init(void){
   DDRB |= (1 << DDB1) | ( 1 << DDB5); // PB1 and PB2 als output

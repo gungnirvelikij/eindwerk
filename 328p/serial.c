@@ -1,3 +1,5 @@
+#include "serial.h"
+
 void serial_write(char val){
 	while(!(UCSR0A & (1<<UDRE0)));
   	UDR0 = val;
