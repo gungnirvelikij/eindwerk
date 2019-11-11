@@ -9,9 +9,45 @@
                 				
                 <macros>
                     					
-                    <stringMacro name="BATCH_BUILD" type="VALUE_TEXT" value="1"/>
+                    <stringListMacro name="PATH" type="VALUE_TEXT_LIST">
+                        						
+                        <value name="/home/gungnir/esp/esp-idf/components/esptool_py/esptool"/>
+                        						
+                        <value name="/home/gungnir/esp/esp-idf/components"/>
+                        						
+                        <value name="/home/gungnir/esp/esp-idf/components/espcoredump"/>
+                        						
+                        <value name="/home/gungnir/esp/esp-idf/components/partition_table/"/>
+                        						
+                        <value name="/home/gungnir/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin"/>
+                        						
+                        <value name="/home/gungnir/.espressif/tools/esp32ulp-elf/2.28.51.20170517/esp32ulp-elf-binutils/bin"/>
+                        						
+                        <value name="/home/gungnir/.espressif/tools/openocd-esp32/v0.10.0-esp32-20190708/openocd-esp32/bin"/>
+                        						
+                        <value name="/home/gungnir/.espressif/python_env/idf4.1_py3.7_env/bin"/>
+                        						
+                        <value name="/home/gungnir/esp/esp-idf/tools"/>
+                        						
+                        <value name="/usr/local/sbin"/>
+                        						
+                        <value name="/usr/local/bin"/>
+                        						
+                        <value name="/usr/bin"/>
+                        						
+                        <value name="/usr/lib/jvm/default/bin"/>
+                        						
+                        <value name="/usr/bin/site_perl"/>
+                        						
+                        <value name="/usr/bin/vendor_perl"/>
+                        						
+                        <value name="/usr/bin/core_perl"/>
+                        					
+                    </stringListMacro>
                     					
                     <stringMacro name="IDF_PATH" type="VALUE_TEXT" value="/home/gungnir/esp/esp-idf"/>
+                    					
+                    <stringMacro name="BATCH_BUILD" type="VALUE_TEXT" value="1"/>
                     				
                 </macros>
                 				

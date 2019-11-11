@@ -7,6 +7,7 @@
 #include "pwm.h"
 #include "adc.h"
 #include "serial.h"
+#include "lcd.h"
 
 #define LOOP_UNTIL_CLEARED(sfr, bit) while(sfr & (1 << bit)) {}
 
@@ -29,6 +30,7 @@ ISR(ADC_vect){
 }
 
 int main(void) {
+	lcd_setup();
 	init_interrupts();
 	adc_init();
 	serial_begin(9600);

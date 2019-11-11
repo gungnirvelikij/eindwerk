@@ -4,7 +4,8 @@
 #include <stdio.h>
 #include "i2c.c"
 
+
 void app_main(void)
 {
-    test();
+    writeLCD();
 }
