@@ -41,6 +41,7 @@ int main(void) {
 			//send_string(string);
 			//send_string("\n");
 			serial_transmit(string);
+			serial_transmit("\n\r");
 			//serial_transmit("\n");
 		//}
 	}
