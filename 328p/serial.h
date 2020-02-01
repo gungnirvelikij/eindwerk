@@ -1,10 +1,9 @@
-#include <util/delay.h>
-#include <avr/io.h>
-#include <avr/interrupt.h>
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef SERIAL_H_INCLUDED
+#define SERIAL_H_INCLUDED
 
-void serial_write(char val);
-void serial_begin(unsigned int baud);
-void send_string(unsigned char s[]);
+char serial_receive();
+void serial_transmit(char*);
+int serial_init();
+int serial_enable_interrupt();
+
+#endif
