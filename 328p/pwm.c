@@ -2,7 +2,7 @@
 
 void pwm_init(void){
   DDRB |= (1 << DDB1) | ( 1 << DDB5); // PB1 and PB2 als output
-  ICR1 = 0xFFFF; //TOP-waarde op 16-bit
+  ICR1 = 0x3EBF; //TOP-waarde op 16-bit
   TCCR1A |= (1 << COM1A1) | (1 << COM1B1); // none-inverting mode
   // FAST PWM mode (16-bit) met ICR1 as TOP 1110
   TCCR1A |= (1 << WGM11);
@@ -18,7 +18,7 @@ void set_duty(int duty){
       duty = 100;
     }
     int map = 0;
-    map = (0xFFFF/100)*duty;          //map input to output
+    map = (ICR1/100)*duty;          //map input to output
     OCR1A = (map); // 0xFFFF = duty cycle 0%
     //OCR1B = 0x000F; // OPTIONEEL TWEEDE PWM COUNTER 75% duty cycle @ 16bit
   }

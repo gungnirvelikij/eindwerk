@@ -10,7 +10,7 @@ unsigned short newvalue;
 unsigned char adc_tochar;
 unsigned char adc_toled;
 unsigned char string[255];
-unsigned char dutycycle = 10;
+unsigned char dutycycle = 20;
 
 
 ISR(PCINT1_vect){
