@@ -2,7 +2,7 @@
 #include "pwm.h"
 #include "adc.h"
 #include "serial.h"
-
+#include "util/delay.h"
 //#define LOOP_UNTIL_CLEARED(sfr, bit) while(sfr & (1 << bit)) {}
 #define ADC_MAX 1023
 
@@ -12,7 +12,8 @@ unsigned short newvalue;
 unsigned char adc_tochar;
 unsigned char adc_toled;
 unsigned char string[255];
-unsigned char dutycycle = 66;
+unsigned char dutycycle = 10;
+const uint8_t delay_ADC = 90; //in µs
 unsigned char charging = 0;
 unsigned char ventilation = 0;
 void ADC_to_serial();
@@ -34,6 +35,7 @@ ISR(ADC_vect){
 }
 
 ISR(TIMER1_COMPA_vect){ // triggered when PWM has reached top -> trigger ADC
+	_delay_us(delay_ADC);
 	ADCSRA |= (1 << ADSC);
 }
 
