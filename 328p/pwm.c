@@ -2,7 +2,7 @@
 
 void pwm_init(void){
   DDRB |= (1 << DDB1) | ( 1 << DDB5); // PB1 and PB2 als output
-  ICR1 = 0x3EBF; //TOP-waarde op 16-bit
+  ICR1 = 0x3E80; //TOP-waarde op 16-bit  16MHz / 1KHz -> 16000 = 0x3E80 
   TCCR1A |= (1 << COM1A1) | (1 << COM1B1); // none-inverting mode
   // FAST PWM mode (16-bit) met ICR1 as TOP 1110
   TCCR1A |= (1 << WGM11);
@@ -11,6 +11,7 @@ void pwm_init(void){
   // Voorlopig geen prescaler nodig (volle snelheid)
   TCCR1B |= (1 << CS10);
   sei();
+  TIMSK1 |= (1 << OCIE1A);  // interrupt enabled for OCF1A -> when output compare has been reached -> start of new period: used to trigger ADC
 }
 
 void set_duty(int duty){
