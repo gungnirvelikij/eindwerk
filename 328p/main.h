@@ -1,7 +1,7 @@
 #include "pwm.h"
 #include "adc.h"
 #include "serial.h"
-#include "util/delay.h"
+#include <util/delay.h>
 
 #define ADC_MAX 1023
 

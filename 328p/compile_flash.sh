@@ -1,10 +1,9 @@
-avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o main.o main.c
-avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o serial.o serial.c
-avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o adc.o adc.c
-avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o pwm.o pwm.c
+avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o obj/main.o main.c
+avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o obj/serial.o serial.c
+avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o obj/adc.o adc.c
+avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o obj/pwm.o pwm.c
 
-
-avr-gcc -mmcu=atmega328p main.o serial.o adc.o pwm.o -o evse
+avr-gcc -mmcu=atmega328p obj/main.o obj/serial.o obj/adc.o obj/pwm.o -o evse
 
 
 echo "Creating hex-file"

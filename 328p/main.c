@@ -1,9 +1,9 @@
 #include "main.h"
 
-const uint8_t delay_ADC = 90; // in µs
+const uint8_t delay_ADC = 0; // in µs
 
-unsigned char ADC_result_string[255];
-unsigned char dutycycle = 10;
+char ADC_result_string[255];
+unsigned char dutycycle = 20;
 
 unsigned char charging = 0;
 unsigned char ventilation = 0;
@@ -14,6 +14,8 @@ unsigned short ADC_6V;
 unsigned short ADC_3V;
 unsigned short ADC_0V;
 unsigned short ADC_result;
+
+ // I2C adres is 3F, SCL 100KHz 
 
 // ISR(PCINT1_vect){
 // 	ADCSRA |= (1 << ADSC); // start ADC-conversie
@@ -30,10 +32,10 @@ ISR(TIMER1_COMPA_vect){ // triggered when PWM has reached top -> trigger ADC
 }
 
 void ADC_to_serial(){
-	itoa(ADC_result, ADC_result_string, 10);
+	//itoa(ADC_result, ADC_result_string, 10);
 	//serial_transmit(ADC_result_string);
-	//serial_transmit("\n\r");
 	check_state(ADC_result);
+		
 }
 
 void start_charging(){
@@ -93,6 +95,7 @@ int main(void) {
 	serial_init();
 	pwm_init();
 	set_duty(dutycycle);
+
 	while(1)	
 	{
 		//
