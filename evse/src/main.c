@@ -5,7 +5,7 @@
 const uint8_t delay_ADC = 0; // in µs
 
 char ADC_result_string[255];
-unsigned char dutycycle = 10;
+unsigned char dutycycle = 40;
 
 unsigned char charging = 0;
 unsigned char ventilation = 0;
@@ -27,7 +27,7 @@ ISR(ADC_vect){
 	ADC_result = ADC;
 }
 
-ISR(TIMER0_COMPA_vect){ // triggered when PWM has reached top -> trigger ADC
+ISR(TIMER0_COMPB_vect){ // triggered when PWM has reached compare OCR1B -> trigger ADC
 	_delay_us(delay_ADC);
 	ADCSRA |= (1 << ADSC);
 }
@@ -61,6 +61,7 @@ void check_state(int reading){ // check reading by ADC (10 bits: 0 to 1024)
 	if(reading > (ADC_12V)){  // 12V
 		serial_transmit("not connected \n\r");
 		stop_charging();
+		
 	} else if(reading > (ADC_9V)) { // 9V
 		serial_transmit("Connected, not charging \n\r");
 		stop_charging();
@@ -95,10 +96,14 @@ int main(void) {
 	serial_init();
 	pwm_init();
 	set_duty(dutycycle);
+	pinMode(D8, OUTPUT);
+	pinMode(D9, OUTPUT);
+	pinMode(D10, OUTPUT);
+	pinMode(D11, OUTPUT);
 
 	while(1)
 	{
-		ADC_to_Serial();
+		check_state();
 		_delay_ms(100);
 	}
 }
