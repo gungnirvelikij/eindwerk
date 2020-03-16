@@ -1,70 +1,103 @@
-#include <util/delay.h>
-#include <avr/io.h>
-#include <avr/interrupt.h>
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include "uart.h"
+#include "main.h"
 
-#define LOOP_UNTIL_CLEARED(sfr, bit) while(sfr & (1 << bit)) {}
-bool timing_error=0;
-void pwm_init(void){
-  DDRB |= (1 << DDB1) | (1 << DDB2); // PB1 and PB2 als output
-  ICR1 = 999; //TOP-waarde
-  //TOP = (16 000 000 / (2*8*freq))-1
-  OCR1A = 0; //set duty cycle 0% to start
-  TCCR1A |= (1 << COM1A1) | (1 << COM1B1); // none-inverting mode
-  // FAST PWM mode (16-bit) met ICR1 as TOP
-  TCCR1A |= (1 << WGM11);
-  TCCR1B |= (1 << WGM12) | (1 << WGM13);
-  //
-  // prescaler 8
-  TCCR1B |= (1 << CS11);
-  TIMSK1 |= (1<<OCIE1A)
-}
-  void set_duty(int duty){
-    if (duty > 100) {                   //overflow protection
-      duty = 100;
-    }
-    int map = 0;
-    OCR1A = (1000/100)*duty;          //map input to output
+const uint8_t delay_ADC = 0; // in µs
 
-  }
-ISR (TIMER1_OVF_vect) //timer1 ISR{
+char ADC_result_string[255];
+unsigned char dutycycle = 20;
 
-    if (TCNT0 & OCR1A){
-      timing_error = 0;
-    }
-    else timing_error = 1;
-}
-void adc_init(void){
-	ADMUX |= (1 << REFS0); // interne referentie van 5 v AVCC
-	ADMUX &= 0xF0; // selecteer ADC0
-	ADCSRA |= (1 << ADPS2) | (1 << ADPS1); // prescaler op /64
-	ADCSRA |= (1 << ADEN); // activeer ADC
+unsigned char charging = 0;
+unsigned char ventilation = 0;
+
+unsigned short ADC_12V;
+unsigned short ADC_9V;
+unsigned short ADC_6V;
+unsigned short ADC_3V;
+unsigned short ADC_0V;
+unsigned short ADC_result;
+
+ // I2C adres is 3F, SCL 100KHz 
+
+// ISR(PCINT1_vect){
+// 	ADCSRA |= (1 << ADSC); // start ADC-conversie
+// }
+
+ISR(ADC_vect){
+	ADC_result = ADC;
+	ADC_to_serial();
 }
 
-void freqcnt_init(void){
-	TCCR0A |= (1<<COM0A0) | (1<<COM0A1); //set oc0a on compare match
-	TCCR0B |= (1<<ICES1) | (1<<CS10) | (1<<CS11) | (1<<CS12);
-  OCR0A = 1000  //counter 0 set ext clock on rising edge
-//TODO: set interrupt on timer1, force compare, if compare not ok => error
+ISR(TIMER1_COMPA_vect){ // triggered when PWM has reached top -> trigger ADC
+	_delay_us(delay_ADC);
+	ADCSRA |= (1 << ADSC);
+}
 
+void ADC_to_serial(){
+	//itoa(ADC_result, ADC_result_string, 10);
+	//serial_transmit(ADC_result_string);
+	check_state(ADC_result);
+		
 }
-unsigned short adc(void){
-	ADCSRA |= (1 << ADSC); // start ADC-conversie
-		LOOP_UNTIL_CLEARED(ADCSRA, ADIF); // loopen tot conversie gedaan
-		return ADC; // lees de 10 bit-waarde in
+
+void start_charging(){
+	if(!charging){	
+		serial_transmit("START \n\r");
+	}
 }
+
+void stop_charging(){
+	if(charging){
+		serial_transmit("STOP \n\r");
+	}
+}
+
+void check_state(int reading){ // check reading by ADC (10 bits: 0 to 1024)
+	// 12V-> no vehicle detected 
+	// 9V -> Vehicle detected, no charging required
+	// 6V -> charging required
+	// 3V -> charging only if in ventilated space (outside) 
+	// 0V -> error
+	
+	if(reading > (ADC_12V)){  // 12V
+		serial_transmit("not connected \n\r");
+		stop_charging();
+	} else if(reading > (ADC_9V)) { // 9V
+		serial_transmit("Connected, not charging \n\r");
+		stop_charging();
+	} else if(reading > (ADC_6V)) { // 6V
+		serial_transmit("Connected, charging requested\n\r");
+		start_charging();
+	} else if(reading > (ADC_3V)) { // 3V
+		serial_transmit("Connected, charging with vent requested \n\r");
+		
+		if(ventilation){
+			start_charging();
+		} else {
+			stop_charging();
+		}
+	} else { //0V
+		serial_transmit("Something's gone wrong\n\r");
+		stop_charging();
+	}
+}
+
+void set_ADC_values(){  // set ADC values at start to prevent recalculation at every check needed
+	ADC_12V = ADC_MAX * (11.0/12.0); // set threshold 1V lower to allow discrepancies
+       	ADC_9V = ADC_MAX * (8.0/12.0);
+	ADC_6V = ADC_MAX * (5.0/12.0);
+	ADC_3V = ADC_MAX * (2.0/12.0);
+}
+
 int main(void) {
-
-	serial_begin(9600);
-	serial_writeln("SERIAL INIT");
+	set_ADC_values();
+	init_interrupts();
+	adc_init();
+	serial_enable_interrupt();
+	serial_init();
 	pwm_init();
-	serial_writeln("PWM INIT");
+	set_duty(dutycycle);
 
-	while(1){
-
-
+	while(1)	
+	{
+		//
 	}
 }

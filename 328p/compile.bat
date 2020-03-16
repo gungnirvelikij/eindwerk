@@ -1,9 +1,11 @@
-@echo off
-echo compiling
-avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -std=c99 -c -o %1.o %1.c
-echo linking
-avr-gcc -mmcu=atmega328p %1.o -o %1
+avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o main.o main.c
+avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o serial.o serial.c
+avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o adc.o adc.c
+avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o pwm.o pwm.c
+
+avr-gcc -mmcu=atmega328p main.o serial.o adc.o pwm.o -o evse
+
 echo creating hex file
-avr-objcopy -O ihex -R .eeprom %1 %1.hex
+avr-objcopy -O ihex -R .eeprom evse evse.hex
 echo uploading
-avrdude -F -V -c arduino -p ATMEGA328P -P COM4 -b 57600 -U flash:w:%1.hex
+avrdude -F -V -c arduino -p ATMEGA328P -P COM4 -b 57600 -U flash:w:evse.hex
