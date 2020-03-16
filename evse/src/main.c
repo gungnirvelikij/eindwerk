@@ -5,7 +5,7 @@
 const uint8_t delay_ADC = 0; // in µs
 
 char ADC_result_string[255];
-unsigned char dutycycle = 20;
+unsigned char dutycycle = 10;
 
 unsigned char charging = 0;
 unsigned char ventilation = 0;
@@ -25,10 +25,9 @@ unsigned short ADC_result;
 
 ISR(ADC_vect){
 	ADC_result = ADC;
-
 }
 
-ISR(TIMER1_COMPA_vect){ // triggered when PWM has reached top -> trigger ADC
+ISR(TIMER0_COMPA_vect){ // triggered when PWM has reached top -> trigger ADC
 	_delay_us(delay_ADC);
 	ADCSRA |= (1 << ADSC);
 }
@@ -37,18 +36,18 @@ void ADC_to_Serial(){
 	//itoa(ADC_result, ADC_result_string, 10);
 	//Serial.print(ADC_result_string);
 	check_state(ADC_result);
-  ADC_to_Serial();
+  //ADC_to_Serial();
 }
 
 void start_charging(){
 	if(!charging){
-		Serial.print("START \n\r");
+		serial_transmit("START \n\r");
 	}
 }
 
 void stop_charging(){
 	if(charging){
-		Serial.print("STOP \n\r");
+		serial_transmit("STOP \n\r");
 	}
 }
 
@@ -60,16 +59,16 @@ void check_state(int reading){ // check reading by ADC (10 bits: 0 to 1024)
 	// 0V -> error
 
 	if(reading > (ADC_12V)){  // 12V
-		Serial.print("not connected \n\r");
+		serial_transmit("not connected \n\r");
 		stop_charging();
 	} else if(reading > (ADC_9V)) { // 9V
-		Serial.print("Connected, not charging \n\r");
+		serial_transmit("Connected, not charging \n\r");
 		stop_charging();
 	} else if(reading > (ADC_6V)) { // 6V
-		Serial.print("Connected, charging requested\n\r");
+		serial_transmit("Connected, charging requested\n\r");
 		start_charging();
 	} else if(reading > (ADC_3V)) { // 3V
-		Serial.print("Connected, charging with vent requested \n\r");
+	serial_transmit("Connected, charging with vent requested \n\r");
 
 		if(ventilation){
 			start_charging();
@@ -77,14 +76,14 @@ void check_state(int reading){ // check reading by ADC (10 bits: 0 to 1024)
 			stop_charging();
 		}
 	} else { //0V
-		Serial.print("wrong\n\r");
+		serial_transmit("Something went wrong\n\r");
 		stop_charging();
 	}
 }
 
 void set_ADC_values(){  // set ADC values at start to prevent recalculation at every check needed
 	ADC_12V = ADC_MAX * (11.0/12.0); // set threshold 1V lower to allow discrepancies
-       	ADC_9V = ADC_MAX * (8.0/12.0);
+  ADC_9V = ADC_MAX * (8.0/12.0);
 	ADC_6V = ADC_MAX * (5.0/12.0);
 	ADC_3V = ADC_MAX * (2.0/12.0);
 }
@@ -93,13 +92,13 @@ int main(void) {
 	set_ADC_values();
 	init_interrupts();
 	adc_init();
-	Serial.begin(9600);
+	serial_init();
 	pwm_init();
 	set_duty(dutycycle);
 
 	while(1)
 	{
-
-
+		ADC_to_Serial();
+		_delay_ms(100);
 	}
 }
