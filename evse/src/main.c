@@ -5,7 +5,9 @@
 const uint8_t delay_ADC = 0; // in µs
 
 char ADC_result_string[255];
-unsigned char dutycycle = 40;
+
+unsigned char dutycycle = 10;
+
 
 unsigned char charging = 0;
 unsigned char ventilation = 0;
@@ -27,7 +29,9 @@ ISR(ADC_vect){
 	ADC_result = ADC;
 }
 
-ISR(TIMER0_COMPB_vect){ // triggered when PWM has reached compare OCR1B -> trigger ADC
+
+ISR(TIMER0_COMPA_vect){ // triggered when PWM has reached top -> trigger ADC
+
 	_delay_us(delay_ADC);
 	ADCSRA |= (1 << ADSC);
 }
@@ -60,16 +64,20 @@ void check_state(int reading){ // check reading by ADC (10 bits: 0 to 1024)
 
 	if(reading > (ADC_12V)){  // 12V
 		serial_transmit("not connected \n\r");
+		serial_transmit(itoa(ADC_result, ADC_result_string, 10));
 		stop_charging();
-		
+
 	} else if(reading > (ADC_9V)) { // 9V
 		serial_transmit("Connected, not charging \n\r");
+		serial_transmit(itoa(ADC_result, ADC_result_string, 10));
 		stop_charging();
 	} else if(reading > (ADC_6V)) { // 6V
 		serial_transmit("Connected, charging requested\n\r");
+		serial_transmit(itoa(ADC_result, ADC_result_string, 10));
 		start_charging();
 	} else if(reading > (ADC_3V)) { // 3V
 	serial_transmit("Connected, charging with vent requested \n\r");
+	serial_transmit(itoa(ADC_result, ADC_result_string, 10));
 
 		if(ventilation){
 			start_charging();
@@ -78,15 +86,16 @@ void check_state(int reading){ // check reading by ADC (10 bits: 0 to 1024)
 		}
 	} else { //0V
 		serial_transmit("Something went wrong\n\r");
+		serial_transmit(itoa(ADC_result, ADC_result_string, 10));
 		stop_charging();
 	}
 }
 
 void set_ADC_values(){  // set ADC values at start to prevent recalculation at every check needed
-	ADC_12V = ADC_MAX * (11.0/12.0); // set threshold 1V lower to allow discrepancies
-  ADC_9V = ADC_MAX * (8.0/12.0);
-	ADC_6V = ADC_MAX * (5.0/12.0);
-	ADC_3V = ADC_MAX * (2.0/12.0);
+	ADC_12V = 930; // set threshold 1V lower to allow discrepancies
+  ADC_9V = 840;
+	ADC_6V = 740;
+	ADC_3V = 645;
 }
 
 int main(void) {
@@ -96,14 +105,12 @@ int main(void) {
 	serial_init();
 	pwm_init();
 	set_duty(dutycycle);
-	pinMode(D8, OUTPUT);
-	pinMode(D9, OUTPUT);
-	pinMode(D10, OUTPUT);
-	pinMode(D11, OUTPUT);
 
 	while(1)
 	{
-		check_state();
+
+		ADC_to_Serial();
+
 		_delay_ms(100);
 	}
 }
