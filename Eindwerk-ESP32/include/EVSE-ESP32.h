@@ -1,0 +1,1 @@
+#define ADC_MAX 1023
