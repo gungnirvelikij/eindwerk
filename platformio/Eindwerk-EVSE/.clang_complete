@@ -1,0 +1,29 @@
+-ID:/Documents/school/Eindwerk/github/platformio/Eindwerk-EVSE/include
+-ID:/Documents/school/Eindwerk/github/platformio/Eindwerk-EVSE/src
+-IC:/Users/gooss/.platformio/packages/framework-arduino-avr/cores/arduino
+-IC:/Users/gooss/.platformio/packages/framework-arduino-avr/variants/standard
+-IC:/Users/gooss/.platformio/lib/Adafruit Unified Sensor_ID31
+-IC:/Users/gooss/.platformio/lib/ArduinoJson_ID64/src
+-IC:/Users/gooss/.platformio/lib/AsyncMqttClient_ID346/src
+-IC:/Users/gooss/.platformio/lib/Basecamp_ID2077
+-IC:/Users/gooss/.platformio/lib/DHT sensor library for ESPx_ID2029
+-IC:/Users/gooss/.platformio/lib/DHT sensor library_ID19
+-IC:/Users/gooss/.platformio/lib/ESP Async WebServer_ID306/src
+-IC:/Users/gooss/.platformio/lib/ESP8266 and ESP32 Oled Driver for SSD1306 display_ID2978/src
+-IC:/Users/gooss/.platformio/lib/I2Cdevlib-Core_ID11
+-IC:/Users/gooss/.platformio/lib/U8g2_ID942/src
+-IC:/Users/gooss/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src
+-IC:/Users/gooss/.platformio/packages/framework-arduino-avr/libraries/HID/src
+-IC:/Users/gooss/.platformio/packages/framework-arduino-avr/libraries/SPI/src
+-IC:/Users/gooss/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src
+-IC:/Users/gooss/.platformio/packages/framework-arduino-avr/libraries/Wire/src
+-IC:/Users/gooss/.platformio/packages/toolchain-atmelavr/avr/include
+-IC:/Users/gooss/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include
+-IC:/Users/gooss/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed
+-IC:/Users/gooss/.platformio/packages/tool-unity
+-DPLATFORMIO=40301
+-DARDUINO_AVR_UNO
+-DF_CPU=16000000L
+-DARDUINO_ARCH_AVR
+-DARDUINO=10808
+-D__AVR_ATmega328P__
