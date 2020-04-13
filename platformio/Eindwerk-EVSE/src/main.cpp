@@ -56,16 +56,16 @@ void check_state(){ // check reading by ADC (10 bits: 0 to 1024)
 	// 0V -> error
   // value -1 to allow for small discrepancy
 
-	if(reading > ((int)(11.0/12.0*ADC_MAX))){  // 12V
+	if(reading > 915){  // 12V
 		Serial.println("not connected \n\r");
 		stop_charging();
-	} else if(reading > (int)(8.0/12.0*ADC_MAX)) { // 9V
+	} else if(reading > 800) { // 9V
 		Serial.println("Connected, not charging \n\r");
 		stop_charging();
-	} else if(reading > (int)(5.0/12.0*ADC_MAX)) { // 6V
+	} else if(reading > 700) { // 6V
 		Serial.println("Connected, charging requested\n\r");
 		start_charging();
-	} else if(reading > (int)(2.0/12.0*ADC_MAX)) { // 3V
+	} else if(reading > 600) { // 3V
 		Serial.println("Connected, charging with vent requested \n\r");
 		
 		if(ventilation){
@@ -93,7 +93,6 @@ void setup() {
   pinMode(interruptpin, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(interruptpin), set_reading, FALLING);
   analogWrite(pwmpin, map(100-dutycycle, 0, 100, 0, 255));  // set PWM on basis of dutycycle variable (mapped from % to byte)
-
 }
 
 void loop() {
