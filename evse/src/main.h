@@ -3,8 +3,6 @@
 #include "serial.h"
 #include <util/delay.h>
 
-#define ADC_MAX 1023
-
 void ADC_to_serial();
 void start_charging();
 void stop_charging();

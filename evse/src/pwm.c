@@ -1,8 +1,6 @@
 #include "pwm.h"
 
 void pwm_init(void){
-  //DDRB |= (1 << DDB1) | ( 1 << DDB6); // PB1 and PB2 als output
-  DDRD |= (1 << DDD6)|(1 << DDD5); //PD6 (D6) as output
   //ICR1 = 0x3E80; //TOP-waarde op 16-bit  16MHz / 1KHz -> 16000 = 0x3E80
   TCCR0A |= (1 << COM0A1) | (1 << COM0B1); // none-inverting mode
   // FAST PWM mode (16-bit) met ICR1 as TOP 1110

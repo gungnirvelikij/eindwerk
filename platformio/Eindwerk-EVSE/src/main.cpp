@@ -91,8 +91,8 @@ void setup() {
   pinMode(pwmpin, OUTPUT);
   pinMode(debugpin, OUTPUT);
   pinMode(interruptpin, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(interruptpin), set_reading, RISING);
-  analogWrite(pwmpin, map(dutycycle, 0, 100, 0, 255));  // set PWM on basis of dutycycle variable (mapped from % to byte)
+  attachInterrupt(digitalPinToInterrupt(interruptpin), set_reading, FALLING);
+  analogWrite(pwmpin, map(100-dutycycle, 0, 100, 0, 255));  // set PWM on basis of dutycycle variable (mapped from % to byte)
 
 }
 
