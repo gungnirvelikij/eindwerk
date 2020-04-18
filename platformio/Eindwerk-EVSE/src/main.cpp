@@ -112,9 +112,7 @@ void set_state(char newstate){
 	}
 }
 
-void set_reading(){
-  reading = analogRead(adcpin);
-}
+
 
 void write_lcd(){
 String state_string = "";
