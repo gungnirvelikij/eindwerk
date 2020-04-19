@@ -24,7 +24,6 @@ void check_state(){ // check reading by ADC (10 bits: 0 to 1024)
 	// map reading from 500-900 to 0-4)
 	int range = map(reading, 500, 900, 0, 4);
 
-	  // do something different depending on the range value:
 	  switch (range) {
 	    case 0:    // reading > 500
 					set_state(5);
@@ -58,9 +57,9 @@ void check_state(){ // check reading by ADC (10 bits: 0 to 1024)
 void set_state(char newstate){
 	if(state != newstate){
 		state = newstate;
-    write_serial();
 
 	}
+  write_serial();
 }
 void write_serial(){
 String state_string = "";
@@ -80,8 +79,9 @@ String state_string = "";
 	case 4:
 		state_string = "HOT - charging";
 	  	break;
-	default:
+	case 5:
 		state_string = "ERROR";
+      break;
   }
 Serial.println(state_string);
 }

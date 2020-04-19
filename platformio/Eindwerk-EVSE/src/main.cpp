@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include "EVSE.h"
 #include <LiquidCrystal_I2C.h>
+#include <TimerOne.h>
 
 //
 // Variables
@@ -9,13 +10,13 @@
 const uint8_t delay_ADC = 0; // in µs
 
 char ADC_result_string[255];
-unsigned char dutycycle = 0;
+unsigned char dutycycle = 1;
 
 unsigned char charging = 0;
 unsigned char ventilation = 0;
 
 unsigned char state = 0;  // 0: not connected, 1: connected no charge, 2: connected charge, 3: connected ventilation no charge, 4: connected ventilation charge, 5: error
-unsigned char current = 0;
+unsigned char current = 16;
 
 LiquidCrystal_I2C lcd(0x3F,20,4);
 
@@ -46,7 +47,7 @@ int relaypin = 9;
 //
 
 void start_charging(){
-	if(!charging){	
+	if(!charging){
 		digitalWrite(relaypin, HIGH);
 	}
 }
@@ -58,10 +59,10 @@ void stop_charging(){
 }
 
 void check_state(){ // check reading by ADC (10 bits: 0 to 1024)
-	// 12V-> no vehicle detected 
+	// 12V-> no vehicle detected
 	// 9V -> Vehicle detected, no charging required
 	// 6V -> charging required
-	// 3V -> charging only if in ventilated space (outside) 
+	// 3V -> charging only if in ventilated space (outside)
 	// 0V -> error
   // value -1 to allow for small discrepancy
 
@@ -79,7 +80,7 @@ void check_state(){ // check reading by ADC (10 bits: 0 to 1024)
 		set_state(2);
 	} else if(reading > 600) { // 3V
 		//Serial.println("Connected, charging with vent requested \n\r");
-		
+
 		if(ventilation){
 			start_charging();
 			set_state(4);
@@ -104,7 +105,6 @@ void set_state(char newstate){
 void set_reading(){
 	reading = analogRead(adcpin);
 }
-
 
 void write_lcd(){
 String state_string = "";
@@ -134,7 +134,7 @@ String state_string = "";
   lcd.print(current);
 }
 
-void set_current(char amps){  //max 20A 
+void set_current(char amps){  //max 20A
 	if(amps < 21){
 		current = amps;
 		dutycycle = amps/0.6;
@@ -143,18 +143,19 @@ void set_current(char amps){  //max 20A
 	}
 }
 
+
 void setup() {
-	set_current(6);
-  
+	set_current(16);
+
   //serial monitor
   Serial.begin(9600);
-  
+
   pinMode(relaypin, OUTPUT);
 
   // interrupt
   pinMode(interruptpin, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(interruptpin), set_reading, FALLING);
-  
+
   //PWM
   pinMode(pwmpin, OUTPUT);
   analogWrite(pwmpin, map(100-dutycycle, 0, 100, 0, 255));  // set PWM on basis of dutycycle variable (mapped from % to byte)
@@ -162,10 +163,11 @@ void setup() {
 	//LCD
   lcd.init();
   lcd.backlight();
+	delay(1000);
   write_lcd();
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  check_state(); 
+  check_state();
 }
