@@ -1,10 +1,6 @@
--ID:/Documents/school/Eindwerk/github/eindwerk/platformio/Eindwerk-EVSE/include
--ID:/Documents/school/Eindwerk/github/eindwerk/platformio/Eindwerk-EVSE/src
--ID:/Documents/school/Eindwerk/github/eindwerk/platformio/Eindwerk-EVSE/.pio/libdeps/nanoatmega328/TimerOne_ID131
 -ID:/Documents/school/Eindwerk/github/eindwerk/platformio/Eindwerk-EVSE/.pio/libdeps/nanoatmega328/LiquidCrystal_I2C_ID576
 -IC:/Users/gooss/.platformio/packages/framework-arduino-avr/libraries/Wire/src
--IC:/Users/gooss/.platformio/packages/framework-arduino-avr/cores/arduino
--IC:/Users/gooss/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs
+-ID:/Documents/school/Eindwerk/github/eindwerk/platformio/Eindwerk-EVSE/.pio/libdeps/nanoatmega328/TimerOne_ID131
 -IC:/Users/gooss/.platformio/lib/Adafruit Unified Sensor_ID31
 -IC:/Users/gooss/.platformio/lib/ArduinoJson_ID64/src
 -IC:/Users/gooss/.platformio/lib/AsyncMqttClient_ID346/src
@@ -22,11 +18,15 @@
 -IC:/Users/gooss/.platformio/packages/framework-arduino-avr/libraries/HID/src
 -IC:/Users/gooss/.platformio/packages/framework-arduino-avr/libraries/SPI/src
 -IC:/Users/gooss/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src
--IC:/Users/gooss/.platformio/packages/toolchain-atmelavr/avr/include
 -IC:/Users/gooss/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include
 -IC:/Users/gooss/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed
+-IC:/Users/gooss/.platformio/packages/toolchain-atmelavr/avr/include
+-ID:/Documents/school/Eindwerk/github/eindwerk/platformio/Eindwerk-EVSE/include
+-ID:/Documents/school/Eindwerk/github/eindwerk/platformio/Eindwerk-EVSE/src
+-IC:/Users/gooss/.platformio/packages/framework-arduino-avr/cores/arduino
+-IC:/Users/gooss/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs
 -IC:/Users/gooss/.platformio/packages/tool-unity
--DPLATFORMIO=40301
+-DPLATFORMIO=40303
 -DARDUINO_AVR_NANO
 -DF_CPU=16000000L
 -DARDUINO_ARCH_AVR

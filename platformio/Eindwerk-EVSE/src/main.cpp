@@ -27,7 +27,9 @@ int reading;
 int adcpin = A0;   // analog pin 0
 int pwmpin = 6; // digital pin 6
 int interruptpin = 2; // digital pin 2
-int relaypin = 9;
+int relaypin = 5;
+int accouplerpin = 3;
+int relaycouplerpin = 4;
 //SCL = A5
 //SDA = A4
 //VDD led = 5V
@@ -49,12 +51,14 @@ int relaypin = 9;
 void start_charging(){
 	if(!charging){
 		digitalWrite(relaypin, HIGH);
+		charging = 1;
 	}
 }
 
 void stop_charging(){
 	if(charging){
 		digitalWrite(relaypin, LOW);
+		charging = 0;
 	}
 }
 
@@ -65,36 +69,62 @@ void check_state(){ // check reading by ADC (10 bits: 0 to 1024)
 	// 3V -> charging only if in ventilated space (outside)
 	// 0V -> error
   // value -1 to allow for small discrepancy
-
+if (digitalRead(accouplerpin) == LOW){
 	if(reading > 915){  // 12V
 		//Serial.println("not connected \n\r");
 		stop_charging();
+	if (digitalRead(relaycouplerpin) == LOW){
+		set_state(7);
+	}
+		else{
 		set_state(0);
+	}
 	} else if(reading > 800) { // 9V
 		//Serial.println("Connected, not charging \n\r");
 		stop_charging();
+		if (digitalRead(relaycouplerpin) == LOW){
+			set_state(7);
+		}
+		else{
 		set_state(1);
+	}
 	} else if(reading > 700) { // 6V
 		//Serial.println("Connected, charging requested\n\r");
+
 		start_charging();
 		set_state(2);
+		_delay_us(100000);
+		if (digitalRead(relaycouplerpin) == LOW){
+			set_state(6);
+			stop_charging();
+		}
+
 	} else if(reading > 600) { // 3V
 		//Serial.println("Connected, charging with vent requested \n\r");
 
 		if(ventilation){
 			start_charging();
 			set_state(4);
-		} else {
+
+			if (digitalRead(relaycouplerpin) == HIGH){
+				set_state(6);
+				stop_charging();
+			}
+			else {
 			stop_charging();
 			set_state(3);
 		}
 	} else { //0V
 		//Serial.println("Something's gone wrong\n\r");
 		stop_charging();
-		set_state(5);
+		set_state(10);
 	}
 }
-
+} else{
+	stop_charging();
+	set_state(5);
+}
+}
 void set_state(char newstate){
 	if(state != newstate){
 		state = newstate;
@@ -124,6 +154,21 @@ String state_string = "";
 	case 4:
 		state_string = "HOT - charging";
 	  	break;
+	case 5:
+		state_string = "ERROR - AC NOT CONNECTED";
+			break;
+	case 6:
+		state_string = "ERROR - RELAY MALFUNCTION";
+			break;
+	case 7:
+		state_string = "ERROR - RELAY STUCK";
+		lcd.clear();
+		lcd.setCursor(1,0);
+		lcd.print(state_string);
+		lcd.setCursor(1,1);
+		lcd.print(current);
+		while(1);
+			break;
 	default:
 		state_string = "ERROR";
   }
@@ -149,7 +194,8 @@ void setup() {
 
   //serial monitor
   Serial.begin(9600);
-
+	pinMode(accouplerpin, INPUT_PULLUP);
+	pinMode(relaycouplerpin, INPUT_PULLUP);
   pinMode(relaypin, OUTPUT);
 
   // interrupt
