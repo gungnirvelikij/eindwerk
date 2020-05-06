@@ -18,6 +18,9 @@ unsigned char ventilation = 0;
 unsigned char state = 0;  // 0: not connected, 1: connected no charge, 2: connected charge, 3: connected ventilation no charge, 4: connected ventilation charge, 5: error
 unsigned char current = 16;
 
+int clockDelay = 0;  // 
+char delayRunning = 0;
+
 LiquidCrystal_I2C lcd(0x3F,20,4);
 
 int reading;
@@ -52,6 +55,7 @@ void start_charging(){
 	if(!charging){
 		digitalWrite(relaypin, HIGH);
 		charging = 1;
+		delayRunning = 1;
 	}
 }
 
@@ -68,13 +72,13 @@ void check_state(){ // check reading by ADC (10 bits: 0 to 1024)
 	// 6V -> charging required
 	// 3V -> charging only if in ventilated space (outside)
 	// 0V -> error
-  // value -1 to allow for small discrepancy
+
 if (digitalRead(accouplerpin) == LOW){
 	if(reading > 915){  // 12V
 		//Serial.println("not connected \n\r");
 		stop_charging();
-	if (digitalRead(relaycouplerpin) == LOW){
-		set_state(7);
+	if (digitalRead(relaycouplerpin) == LOW && !delayRunning){
+		set_state(7);  // relay stuck to closed
 	}
 		else{
 		set_state(0);
@@ -110,7 +114,7 @@ if (digitalRead(accouplerpin) == LOW){
 				set_state(6);
 				stop_charging();
 			}
-			else {
+		} else {
 			stop_charging();
 			set_state(3);
 		}
@@ -134,6 +138,16 @@ void set_state(char newstate){
 
 void set_reading(){
 	reading = analogRead(adcpin);
+	
+	// gets triggered by 1 KHz square wave => clock
+	if(delayRunning){  // delay to give relay time to open, 200 ms
+		if(clockDelay < 200){
+			clockDelay++;
+		}else{
+			clockDelay = 0;
+			delayRunning = 0;
+		}
+	}
 }
 
 void write_lcd(){
