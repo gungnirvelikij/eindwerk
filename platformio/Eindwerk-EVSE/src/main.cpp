@@ -25,6 +25,9 @@ char LCDDelayRunning = 0;
 int RelayDelay = 0;
 char RelayDelayRunning = 0;
 
+int PeakTimer = 0;
+char Peak = 0;   
+
 LiquidCrystal_I2C lcd(0x3F,20,4);
 
 int reading;
@@ -147,6 +150,26 @@ void set_reading(){
 		}else{
 			LCDDelay = 0;
 			LCDDelayRunning = 0;
+		}
+	}
+
+	if(Peak){    // timer for peak
+		if(PeakTimer < 15000){   //peak for 15 s
+			PeakTimer ++;
+		} else {  // enter cooldown
+			PeakTimer = 0;
+			Peak = 0;
+			set_current(16);
+		}
+	} else {   // cooldown 1 min
+		if(){
+			if(PeakTimer < 60000){   //cooldown for 60 s
+			PeakTimer ++;
+		} else {     // enter peak
+			PeakTimer = 0;
+			Peak = 1;
+			set_current(29);
+		}
 		}
 	}
 }
