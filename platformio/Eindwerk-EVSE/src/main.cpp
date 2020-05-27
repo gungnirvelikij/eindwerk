@@ -153,29 +153,21 @@ void set_reading(){
 			LCDDelayRunning = 0;
 		}
 	}
-Serial.println(PeakTimer);
-	if(Peak){    // timer for peak
 
-		if(PeakTimer <= 1500){   //peak
-			PeakTimer ++;
-		} else {  // enter cooldown
-			PeakTimer = 0;
-			Peak = 0;
+PeakTimer ++;
+
+		if(PeakTimer <= 4500){   //peak
 			set_current(16);
-			Serial.println(current);
-		}
-	}
- // cooldown 1 min
-		if(PeakTimer <= 6000){   //cooldown
-			PeakTimer ++;
-	} else {     // enter peak
-			PeakTimer = 0;
-			Peak = 1;
-			set_current(29);
-			Serial.println(current);
-		}
-	}
 
+		}
+		if(PeakTimer > 4500 && PeakTimer < 6000 ){
+			set_current(29);
+
+		}
+		if(PeakTimer > 6000){
+			PeakTimer = 0;
+		}
+	}
 
 void write_lcd(){
 String state_string = "";
@@ -221,7 +213,7 @@ String state_string = "";
 			lcd.print(state_string);
 			lcd.setCursor(1,1);
 			lcd.print(current);
-			Serial.println("lcd write");
+
 			state_displayed = state;
 			current_displayed = current;
 			LCDDelayRunning = 1;
@@ -233,6 +225,7 @@ void set_current(char amps){  //max 20A
 	if(amps < 30){
 		current = amps;
 		dutycycle = amps/0.6;
+		analogWrite(pwmpin, map(100-dutycycle, 0, 100, 0, 255));
 	} else {
 		set_current(6);
 	}
@@ -253,7 +246,7 @@ void setup() {
 
   //PWM
   pinMode(pwmpin, OUTPUT);
-  analogWrite(pwmpin, map(100-dutycycle, 0, 100, 0, 255));  // set PWM on basis of dutycycle variable (mapped from % to byte)
+  //analogWrite(pwmpin, map(100-dutycycle, 0, 100, 0, 255));  // set PWM on basis of dutycycle variable (mapped from % to byte)
 
 	//LCD
   lcd.init();
