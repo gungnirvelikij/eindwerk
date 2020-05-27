@@ -49,6 +49,7 @@ void start_charging(){
 	if(!charging){
 		digitalWrite(relaypin, HIGH);
 		charging = 1;
+		RelayDelay = 0;
 		RelayDelayRunning = 1;
 	}
 }
@@ -57,6 +58,8 @@ void stop_charging(){
 	if(charging){
 		digitalWrite(relaypin, LOW);
 		charging = 0;
+		RelayDelay = 0;
+		RelayDelayRunning = 1;
 	}
 }
 
@@ -92,7 +95,7 @@ void check_state(){ // check reading by ADC (10 bits: 0 to 1024)
 			start_charging();
 			set_state(2);
 			_delay_us(100000);
-			if (digitalRead(relaycouplerpin) == LOW){
+			if (digitalRead(relaycouplerpin) == HIGH && !RelayDelayRunning){
 				set_state(6);
 				stop_charging();
 			}
@@ -104,7 +107,7 @@ void check_state(){ // check reading by ADC (10 bits: 0 to 1024)
 				start_charging();
 				set_state(4);
 
-				if (digitalRead(relaycouplerpin) == HIGH){
+				if (digitalRead(relaycouplerpin) == HIGH && !RelayDelayRunning){
 					set_state(6);
 					stop_charging();
 				}
@@ -195,9 +198,7 @@ String state_string = "";
 			state_displayed = state;
 			LCDDelayRunning = 1;
 		}
-
 	}
-
 }
 
 void set_current(char amps){  //max 20A
