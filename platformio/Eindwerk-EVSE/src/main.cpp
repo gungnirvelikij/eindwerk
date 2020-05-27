@@ -18,6 +18,7 @@ unsigned char ventilation = 0;
 unsigned char state = 0;  // 0: not connected, 1: connected no charge, 2: connected charge, 3: connected ventilation no charge, 4: connected ventilation charge, 5: error
 unsigned char current = 16;
 unsigned char state_displayed = 0;
+unsigned char current_displayed = 0;
 
 int LCDDelay = 0;  
 char LCDDelayRunning = 0;
@@ -162,8 +163,7 @@ void set_reading(){
 			set_current(16);
 		}
 	} else {   // cooldown 1 min
-		if(){
-			if(PeakTimer < 60000){   //cooldown for 60 s
+		if(PeakTimer < 60000){   //cooldown for 60 s
 			PeakTimer ++;
 		} else {     // enter peak
 			PeakTimer = 0;
@@ -212,13 +212,14 @@ String state_string = "";
   }
 
 	if(!LCDDelayRunning){
-		if(state != state_displayed){
+		if((state != state_displayed) || (current != current_displayed)){
 			lcd.clear();
 			lcd.setCursor(1,0);
 			lcd.print(state_string); 
 			lcd.setCursor(1,1);
 			lcd.print(current);
 			state_displayed = state;
+			current_displayed = current;
 			LCDDelayRunning = 1;
 		}
 	}
