@@ -26,7 +26,7 @@
 -IC:/Users/gooss/.platformio/packages/framework-arduino-avr/cores/arduino
 -IC:/Users/gooss/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs
 -IC:/Users/gooss/.platformio/packages/tool-unity
--DPLATFORMIO=40303
+-DPLATFORMIO=40304
 -DARDUINO_AVR_NANO
 -DF_CPU=16000000L
 -DARDUINO_ARCH_AVR

@@ -20,14 +20,14 @@ unsigned char current = 16;
 unsigned char state_displayed = 0;
 unsigned char current_displayed = 0;
 
-int LCDDelay = 0;  
+int LCDDelay = 0;
 char LCDDelayRunning = 0;
 
 int RelayDelay = 0;
 char RelayDelayRunning = 0;
 
 int PeakTimer = 0;
-char Peak = 0;   
+char Peak = 0;
 
 LiquidCrystal_I2C lcd(0x3F,20,4);
 
@@ -123,7 +123,7 @@ void check_state(){ // check reading by ADC (10 bits: 0 to 1024)
 			//Serial.println("Something's gone wrong\n\r");
 			stop_charging();
 			set_state(10);
-		} 
+		}
 	} else {
 	stop_charging();
 	set_state(5);
@@ -135,7 +135,7 @@ void set_state(char newstate){
 
 void set_reading(){
 	reading = analogRead(adcpin);
-	
+
 	// gets triggered by 1 KHz square wave => clock
 	if(RelayDelayRunning){  // delay to give relay time to open, 200 ms
 		if(RelayDelay < 200){
@@ -153,26 +153,29 @@ void set_reading(){
 			LCDDelayRunning = 0;
 		}
 	}
-
+Serial.println(PeakTimer);
 	if(Peak){    // timer for peak
-		if(PeakTimer < 15000){   //peak for 15 s
+
+		if(PeakTimer <= 1500){   //peak
 			PeakTimer ++;
 		} else {  // enter cooldown
 			PeakTimer = 0;
 			Peak = 0;
 			set_current(16);
+			Serial.println(current);
 		}
-	} else {   // cooldown 1 min
-		if(PeakTimer < 60000){   //cooldown for 60 s
+	}
+ // cooldown 1 min
+		if(PeakTimer <= 6000){   //cooldown
 			PeakTimer ++;
-		} else {     // enter peak
+	} else {     // enter peak
 			PeakTimer = 0;
 			Peak = 1;
 			set_current(29);
-		}
+			Serial.println(current);
 		}
 	}
-}
+
 
 void write_lcd(){
 String state_string = "";
@@ -215,9 +218,10 @@ String state_string = "";
 		if((state != state_displayed) || (current != current_displayed)){
 			lcd.clear();
 			lcd.setCursor(1,0);
-			lcd.print(state_string); 
+			lcd.print(state_string);
 			lcd.setCursor(1,1);
 			lcd.print(current);
+			Serial.println("lcd write");
 			state_displayed = state;
 			current_displayed = current;
 			LCDDelayRunning = 1;
@@ -226,7 +230,7 @@ String state_string = "";
 }
 
 void set_current(char amps){  //max 20A
-	if(amps < 21){
+	if(amps < 30){
 		current = amps;
 		dutycycle = amps/0.6;
 	} else {
